@@ -15,7 +15,8 @@
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18",
     "react-hook-form": "^7.53.0",
-    "react-hot-toast": "^2.4.1"
+    "react-hot-toast": "^2.4.1",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "axe-core": "^4.10.0",
