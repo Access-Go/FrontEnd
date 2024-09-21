@@ -1,5 +1,4 @@
-{
-  "name": "access-go",
+{ "name": "access-go",
   "version": "0.1.0",
   "private": true,
   "scripts": {
