@@ -1,9 +1,9 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+
+import LocalesCarousel from "./Molecules/establesamientoSlider";
 
 const HomeContent = () => {
+  
+
     return (
       <div className="flex flex-col text-[#2F4F4F] w-full justify-center font-sans"> 
         
@@ -178,135 +178,11 @@ const HomeContent = () => {
   
 
         <div className="md:hidden flex justify-center">
-        <Swiper
-         className="w-full"
-          spaceBetween={17.5}
-          slidesPerView={1}
-          pagination={{ clickable: true }} 
-        >
-          <SwiperSlide>
-            <div className="relative border w-[215px] h-[257px] rounded">
-              <img
-                src="/simon-karemann-p85-MG66GRY-unsplash 1.svg"
-                alt="Imagen random de un lugar"
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-black to-transparent w-full text-white">
-                <h4 className="text-[15px] font-bold">Restaurantes</h4>
-                <div className="flex items-center mb-1">
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                </div>
-                <p className="text-[10px] mt-2">100% Acceso</p>
-              </div>
-            </div>
-          </SwiperSlide>
-         
-          <SwiperSlide>
-          <div className="relative border w-[215px] h-[257px] rounded">
-              <img 
-                src="/simon-karemann-p85-MG66GRY-unsplash 1.svg" 
-                alt="Imagen random de un lugar" 
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-black to-transparent w-full text-white">
-                <h4 className="text-[15px] font-bold">Hoteles</h4>
-                <div className="flex items-center mb-1">
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                </div>
-                <p className="text-[10px] mt-2">100% Acceso</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="relative border w-[215px] h-[257px] rounded">
-              <img 
-                src="/simon-karemann-p85-MG66GRY-unsplash 1.svg" 
-                alt="Imagen random de un lugar" 
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-black to-transparent w-full text-white">
-                <h4 className="text-[15px] font-bold">Turismo</h4>
-                <div className="flex items-center mb-1">
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                </div>
-                <p className="text-[10px] mt-2">100% Acceso</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="relative border w-[215px] h-[257px] rounded">
-              <img 
-                src="/simon-karemann-p85-MG66GRY-unsplash 1.svg" 
-                alt="Imagen random de un lugar" 
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-black to-transparent w-full text-white">
-                <h4 className="text-[15px] font-bold">Hospitales</h4>
-                <div className="flex items-center mb-1">
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                </div>
-                <p className="text-[10px] mt-2">100% Acceso</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="relative border w-[215px] h-[257px] rounded custom-max:block hidden">
-            <img 
-                src="/simon-karemann-p85-MG66GRY-unsplash 1.svg" 
-                alt="Imagen random de un lugar" 
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-black to-transparent w-full text-white">
-                <h4 className="text-[15px] font-bold">Museos</h4>
-                <div className="flex items-center mb-1">
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                </div>
-                <p className="text-[10px] mt-2">100% Acceso</p>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="relative border w-[215px] h-[257px] rounded custom-max:block hidden">
-            <img 
-                src="/simon-karemann-p85-MG66GRY-unsplash 1.svg" 
-                alt="Imagen random de un lugar" 
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-black to-transparent w-full text-white">
-                <h4 className="text-[15px] font-bold">Espacios Recreativos</h4>
-                <div className="flex items-center mb-1">
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                </div>
-                <p className="text-[10px] mt-2">100% Acceso</p>
-              </div>
-
-            </div>
-          </SwiperSlide>
-        </Swiper>
+        
+        <div>
+      
+      <LocalesCarousel/>
+    </div>
       </div>
 
       
