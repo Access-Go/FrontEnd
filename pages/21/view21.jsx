@@ -22,7 +22,7 @@ const View21 = () => {
     <>
       <Layout>
         <div className="container mx-auto px-4 py-8 max-w-4xl">
-          <h1 className="text-4xl md:text-5xl font-bold text-center text-green-700 mb-12">¡Bienvenido!</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-center text-[#2F4F4F] mb-12">¡Bienvenido!</h1>
 
           <div className="flex flex-col md:flex-row gap-12 p-6 max-w-4xl mx-auto">
             <div className="flex justify-center space-x-8">
