@@ -19,8 +19,8 @@ const HomeContent = () => {
             <div className="container items-center p-2">
               <div className="relative flex flex-row items-center h-[350px] w-full">
               
-                <div className="flex flex-col absolute transform rotate-[-10deg]  bg-[#2F4F4F] w-[146px] h-[227px] rounded-[25px] shadow-lg z-20">
-                  <div className="flex flex-col m-3 w-[120px] h-[160px] mb-3 flex items-center justify-center">
+                <div className="flex flex-col absolute transform rotate-[-10deg]  bg-[#2F4F4F] w-[120px] h-[200px] md:w-[146px] md:h-[227px] rounded-[25px] shadow-lg z-20">
+                  <div className="flex flex-col m-3 w-[100px] h-[140px]  md:w-[120px] md:h-[160px] mb-3 flex items-center justify-center">
                     <img 
                       src="/en la sala.svg" 
                       alt="imagen 1" 
@@ -31,8 +31,8 @@ const HomeContent = () => {
                 </div>
 
               
-                <div className="flex flex-col mt-[30px] ml-[100px] absolute bg-[#EFD16B] w-[146px] h-[227px] rounded-[25px] shadow-lg z-10">
-                  <div className="flex flex-col m-3 w-[120px] h-[160px] mb-3 flex items-center justify-center">
+                <div className="flex flex-col mt-[30px] ml-[100px] absolute bg-[#EFD16B] w-[120px] h-[200px] md:w-[146px] md:h-[227px] rounded-[25px] shadow-lg z-10">
+                  <div className="flex flex-col m-3 w-[100px] h-[140px]  md:w-[120px] md:h-[160px] mb-3 flex items-center justify-center">
                     <img 
                       src="/restaurante.jpg" 
                       alt="imagen 2" 
@@ -43,8 +43,8 @@ const HomeContent = () => {
                 </div>
 
               
-                <div className="flex flex-col absolute mt-[80px] ml-[200px] bg-[#7F9529] w-[146px] h-[227px] rounded-[25px] shadow-lg z-0 transform rotate-[10deg]">
-                  <div className="flex flex-col m-3 w-[120px] h-[160px] mb-3 flex items-center justify-center">
+                <div className="flex flex-col absolute mt-[80px] ml-[200px] bg-[#7F9529] w-[120px] h-[200px] md:w-[146px] md:h-[227px] rounded-[25px] shadow-lg z-0 transform rotate-[10deg]">
+                  <div className="flex flex-col m-3 w-[100px] h-[140px]  md:w-[120px] md:h-[160px] mb-3 flex items-center justify-center">
                     <img 
                       src="/en la calle.svg" 
                       alt="imagen 3" 

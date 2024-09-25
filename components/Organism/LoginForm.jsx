@@ -1,56 +1,66 @@
 import React from 'react';
-import { Form, Input } from '../Molecules/FormStyles'; // Ajusta la ruta según tu estructura
+import { Form, Input } from '../Molecules/FormStyles'; 
 
 const LoginForm = () => {
+
+  
   return (
-    <Form onSubmit={(e) => e.preventDefault()}>
-      <h1 className="text-xl mb-4">Iniciar Sesión</h1>
-      
-      <Input
-        label="Correo Electrónico"
-        name="email"
-        type="email"
-        id="email"
-        placeholder="Introduce tu correo"
-        value="" // Sin valor inicial
-        onChange={() => {}} // Función vacía
-      />
-
-      <Input
-        label="Número de WhatsApp"
-        name="whatsapp"
-        type="tel"
-        id="whatsapp"
-        placeholder="Introduce tu número de WhatsApp"
-        value="" // Sin valor inicial
-        onChange={() => {}} // Función vacía
-      />
-
-      <div className="mb-4">
+    <Form onSubmit={(e) => e.preventDefault()} className="grid gap-4">
+      <div>
+        <label htmlFor="email" className="block text-sm font-medium text-[#546E7A] mb-1">
+          Correo Electrónico
+        </label>
         <Input
-          label="Contraseña"
-          name="password"
-          type="password" // Campo de contraseña
-          id="password"
-          placeholder="Introduce tu contraseña"
-          value="" // Sin valor inicial
-          onChange={() => {}} // Función vacía
+          type="email"
+          id="email"
+          placeholder="Introduce tu correo"
+          className="w-full px-3 py-2 border text-xs md:text-sm border-[#B0BEC5] bg-[#F9F9F9] rounded-md text-[#263238] placeholder-[#78909C] focus:outline-none focus:ring-2 focus:ring-[#B0BEC5] focus:border-transparent focus:bg-blue-50"
         />
-        <div className="flex items-center mt-2">
-          <input
-            type="checkbox"
-            className="mr-2 leading-tight"
-          />
-          <span className="text-sm underline cursor-pointer">Mostrar</span> {/* Subrayado */}
-        </div>
       </div>
 
-      <button
-        type="submit"
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-      >
-        Iniciar Sesión
-      </button>
+      <div>
+        <label htmlFor="whatsapp" className="block text-sm font-medium text-[#546E7A] mb-1">
+          Número de WhatsApp
+        </label>
+        <Input
+          type="tel"
+          id="whatsapp"
+          placeholder="Introduce tu número de WhatsApp"
+          className="w-full px-3 py-2 border border-[#B0BEC5] text-xs md:text-sm bg-[#F9F9F9] rounded-md text-[#263238] placeholder-[#78909C] focus:outline-none focus:ring-2 focus:ring-[#B0BEC5] focus:border-transparent focus:bg-blue-50"
+        />
+      </div>
+
+      <div>
+          <label 
+            htmlFor="password" 
+            className="block text-sm font-medium text-[#546E7A] mb-1"
+          >
+            Contraseña
+          </label>
+          <div className="relative">
+            <Input
+              type="password"
+              id="password"
+              placeholder="Introduce tu contraseña"
+              className="w-full px-3 py-2 border text-xs md:text-sm border-[#B0BEC5] bg-[#F9F9F9] rounded-md text-[#263238] placeholder-[#78909C] focus:outline-none focus:ring-2 focus:ring-[#B0BEC5] focus:border-transparent focus:bg-blue-50"
+            />
+            <span 
+              onClick={() => {
+                const input = document.getElementById('password');
+                input.type = input.type === 'password' ? 'text' : 'password';
+              }} 
+              className="absolute right-3 top-3 text-[#546E7A] hover:underline hover:cursor-pointer text-xs md:text-sm"
+            >
+              Mostrar
+            </span>
+          </div>
+        </div>
+
+        <div className="mt-8 flex justify-center ">
+            <button className="px-6 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-black bg-[#F5F0E5] hover:bg-[#E0D7C6] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00695C]">
+              INICIAR SESIÓN
+            </button>
+        </div>
     </Form>
   );
 };

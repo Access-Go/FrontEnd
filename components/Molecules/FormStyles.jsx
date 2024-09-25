@@ -4,7 +4,7 @@ const Form = ({ children, onSubmit }) => {
   return (
     <form
       onSubmit={onSubmit}
-      className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-[400px]" 
+      className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 w-[300px] md:w-[600px]"
     >
       {children}
     </form>
@@ -13,24 +13,28 @@ const Form = ({ children, onSubmit }) => {
 
 const Input = ({ label, type = 'text', placeholder, ...props }) => {
   const [isFocused, setIsFocused] = useState(false);
+  const [isFilled, setIsFilled] = useState(false);
 
   const handleFocus = () => setIsFocused(true);
-  const handleBlur = () => setIsFocused(false);
+  const handleBlur = (e) => {
+    setIsFocused(false);
+    setIsFilled(!!e.target.value); 
+  };
 
   return (
-    <div
-      className={`relative w-[330px] h-[65px] rounded bg-blue-400 transition-colors duration-200 ${
-        isFocused ? 'bg-blue-700' : 'bg-blue-400'
-      }`}
-    >
+    <div className="relative w-[250px] md:w-[550px] h-[65px]">
       <label
-        className="absolute text-[#455A64] text-[12px] left-[10px] top-[10px]"
+        className={`absolute text-[#455A64] text-[12px] left-[10px] top-[10px] transition-all duration-200 ${
+          isFocused || isFilled ? 'text-blue-500' : ''
+        }`}
       >
         {label}
       </label>
       <input
         type={type}
-        className="w-full h-full bg-transparent text-[16px] text-[#78909C] px-[10px] pt-[20px] focus:outline-none"
+        className={`w-full h-full bg-[#F9F9F9] border border-[#B0BEC5] rounded-md text-[16px] text-[#78909C] px-[10px] pt-[20px] focus:outline-none focus:ring-2 focus:ring-[#B0BEC5] focus:border-transparent ${
+          isFocused ? 'bg-blue-50' : ''
+        }`}
         placeholder={placeholder}
         onFocus={handleFocus}
         onBlur={handleBlur}
@@ -39,6 +43,5 @@ const Input = ({ label, type = 'text', placeholder, ...props }) => {
     </div>
   );
 };
-
 
 export { Form, Input };
