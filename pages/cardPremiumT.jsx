@@ -123,6 +123,30 @@ export default function CardFree() {
           </div>
         </div>
 
+        <section className='w-full flex flex-col mt-6'>
+            <p className='text-2xl lg:text-3xl text-[#7E952A] text-center'>¡Este mes para ti!</p>
+            
+            <div className='grid grid-cols-4 justify-center items-center mt-8'>
+            <img className='col-start-2 col-end-2 w-[79px] h-[72px] rounded-lg' src="raultemporaryImages/promoImg.png" alt="" />
+            <p className='col-start-3 col-end-4 text-sm ml-4'>Promocion</p>
+            </div>
+            <p className='text-xs lg:text-base text-center mt-6'>solo este mes las mejores promociones para ti</p>
+
+            <div className='grid grid-cols-4 justify-center items-center mt-8'>
+            <img className='col-start-2 col-end-2 w-[79px] h-[72px] rounded-lg' src="raultemporaryImages/offerImg.png" alt="" />
+            <p className='col-start-3 col-end-4 text-sm ml-4'>Oferta</p>
+            </div>
+            <p className='text-sm lg:text-base text-center mt-6'>solo este mes las mejores promociones para ti</p>
+
+            <div className='grid grid-cols-4 justify-center items-center mt-8'>
+            <img className='col-start-2 col-end-2 w-[79px] h-[72px] rounded-lg' src="raultemporaryImages/menuImg.png" alt="" />
+            <p className='col-start-3 col-end-4 text-sm ml-4'>Menu</p>
+            </div>
+            <p className='text-sm lg:text-base text-center mt-6'>solo este mes las mejores promociones para ti</p>
+
+
+        </section>
+
         <section className='w-full h-full mt-6 flex flex-col '>
           <button
             className='p-0 w-[196px] h-[28px] md:w-[210px] md:h-[36px] lg:w-[240px] lg:h-[44px] bg-[#2F4F4F] rounded-full text-sm md:text-base lg:text-lg text-center text-white self-center'
