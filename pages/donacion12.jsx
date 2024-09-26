@@ -3,18 +3,18 @@ import Layout from '../components/Layout';
 export default function Donacion() {
   return (
     <Layout>
-      <div className='w-full h-full flex flex-col justify-center '>
+      <div className='w-full h-full flex flex-col justify-center lg:p-16 '>
         <div className='text-[#2F4F4F] text-center' >
-          <p className='text-xl font-bold '>¡Ayúdanos a Hacer del Mundo un Lugar Más Accesible!</p>
-          <p className='text-sm mt-6 ' >
+          <p className='text-xl md:text-4xl lg:text-4xl font-bold '>¡Ayúdanos a Hacer del Mundo un Lugar Más Accesible!</p>
+          <p className='text-sm mt-6 md:text-xl lg:text-xl ' >
             <strong>En AccesGo,</strong> nos dedicamos a ofrecerte la mejor información sobre la
             accesibilidad en establecimientos para que todos puedan disfrutar de
             espacios inclusivos y cómodos. Tu apoyo es fundamental para mantener
             y mejorar continúamente nuestro sitio web, asegurando que puedas
             encontrar la información que necesitas.
           </p>
-          <p className='text-xl font-bold mt-8'>¿Cómo puedes ayudar?</p>
-          <p className='text-sm mt-8'>
+          <p className='text-xl font-bold mt-8 md:text-2xl lg:text-2xl'>¿Cómo puedes ayudar?</p>
+          <p className='text-sm mt-8 md:text-xl lg:text-xl'>
             Cada contribución, grande o pequeña, tiene un impacto significativo.
             Contribuye a la causa de la accesibilidad y ayuda a mantener
             AccesoGo como una herramienta esencial para todos. Puedes donar de

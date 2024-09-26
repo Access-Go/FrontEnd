@@ -1,9 +1,9 @@
 import Layout from '@/components/Layout';
 
-export default function CardFree() {
+export default function CardPremium() {
   return (
     <Layout>
-      <div className='flex flex-col justify-center w-full h-full md:p-4 lg:p-8'>
+      <div className='flex flex-col justify-center w-full h-full md:p-8 lg:p-14'>
         <div className='w-full mt-4 flex flex-col justify-center items-center'>
           <p className='text-[#2F4F4F] text-[20px] md:text-[40px] lg:text-[56px] text-center font-semibold'>
             ¡AccessGo!
@@ -15,7 +15,7 @@ export default function CardFree() {
           />
         </div>
 
-        <section className='flex flex-col md:flex-row lg:flex-row w-full mt-4'>
+        <section className='flex flex-col md:flex-row lg:flex-row w-full mt-4 md:mt-10 lg:mt-16'>
           <div className='md:w-2/3 lg:w-2/3'>
             <p className='w-full h-[40px] text-[#7E952A] text-[20px] md:text-2xl lg:text-3xl font-semibold'>
               Cielito querido
@@ -94,7 +94,7 @@ export default function CardFree() {
           </div>
         </section>
 
-        <div className='w-full flex flex-col justify-center items-center mt-8'>
+        <div className='w-full flex flex-col justify-center items-center mt-8 md:mt-12 lg:mt-16'>
           <select className='rounded-lg bg-gray-400 mt-4' name='' id=''>
             <option value='Place'>Juarez 6600 Ciudad de Mexico</option>
           </select>
@@ -126,20 +126,20 @@ export default function CardFree() {
         <section className='w-full flex flex-col mt-6'>
             <p className='text-2xl lg:text-3xl text-[#7E952A] text-center'>¡Este mes para ti!</p>
             
-            <div className='grid grid-cols-4 justify-center items-center mt-8'>
-            <img className='col-start-2 col-end-2 w-[79px] h-[72px] rounded-lg' src="raultemporaryImages/promoImg.png" alt="" />
+            <div className='grid grid-cols-4 justify-center items-center mt-8 md:mt-12 lg:mt-16'>
+            <img className='col-start-2 col-end-3 place-self-end  w-[79px] h-[72px] rounded-lg' src="raultemporaryImages/promoImg.png" alt="" />
             <p className='col-start-3 col-end-4 text-sm ml-4'>Promocion</p>
             </div>
             <p className='text-xs lg:text-base text-center mt-6'>solo este mes las mejores promociones para ti</p>
 
-            <div className='grid grid-cols-4 justify-center items-center mt-8'>
-            <img className='col-start-2 col-end-2 w-[79px] h-[72px] rounded-lg' src="raultemporaryImages/offerImg.png" alt="" />
+            <div className='grid grid-cols-4 justify-center items-center mt-8 md:mt-12 lg:mt-16'>
+            <img className='col-start-2 col-end-3 place-self-end w-[79px] h-[72px] rounded-lg' src="raultemporaryImages/offerImg.png" alt="" />
             <p className='col-start-3 col-end-4 text-sm ml-4'>Oferta</p>
             </div>
             <p className='text-sm lg:text-base text-center mt-6'>solo este mes las mejores promociones para ti</p>
 
-            <div className='grid grid-cols-4 justify-center items-center mt-8'>
-            <img className='col-start-2 col-end-2 w-[79px] h-[72px] rounded-lg' src="raultemporaryImages/menuImg.png" alt="" />
+            <div className='grid grid-cols-4 justify-center items-center mt-8 md:mt-12 lg:mt-16'>
+            <img className='col-start-2 col-end-3 place-self-end w-[79px] h-[72px] rounded-lg' src="raultemporaryImages/menuImg.png" alt="" />
             <p className='col-start-3 col-end-4 text-sm ml-4'>Menu</p>
             </div>
             <p className='text-sm lg:text-base text-center mt-6'>solo este mes las mejores promociones para ti</p>
