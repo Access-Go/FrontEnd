@@ -19,14 +19,14 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center space-x-4 mr-[30px] md:mr-[40px]">
-          {/* Condiciona el renderizado del botón de iniciar sesión */}
+         
           {router.pathname !== '/login' && (
             <a href="/login" className="hidden font-bold lg:block bg-white border-black border-2 hover:bg-[#2F4F4F] text-[#2F4F4F] hover:text-white px-4 py-2 rounded rounded-l-full rounded-r-full">
               Inicia Sesión
             </a>
           )}
           
-          {/* Condiciona el renderizado del botón "¡Únete!" */}
+
           {router.pathname !== '/signup' && (
             <a href="/signup" className="bg-[#2F4F4F] font-bold hover:bg-[#4A6969] text-white px-4 py-2 rounded-l-full rounded-r-full flex items-center space-x-2 w-[117px]">
               <img src="/heart_plus_24dp_5F6368_FILL1_wght400_GRAD0_opsz24 (1) 1.svg" alt="heart with plus" className="w-6 h-6" />
