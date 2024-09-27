@@ -41,7 +41,7 @@ const AccessForm = () => {
         <a href="/signup" className="">Cancelar</a>
           </Button>
         <Button className="w-[155px] h-[40px] bg-[#2F4F4F] text-white rounded-lg flex items-center justify-center">
-          <a href="/formularioAccesibilidad" className="">Continuar</a>
+          <a href="" className="">Continuar</a>
         </Button>
       </div>
     </div>
