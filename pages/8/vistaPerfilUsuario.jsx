@@ -10,8 +10,8 @@ import Image from 'next/image';
     <div>
         <div>
            <div className="grid grid-cols-2">
+            <div className="flex justify-end mr-40">
             <div>
-            
             <Image
                   src="/iconoframe.png"
                   alt="Foto de perfil"
@@ -21,20 +21,19 @@ import Image from 'next/image';
                 />
                 <h3 className="flex justify-center">NOMBRE</h3>
                 </div>
-                
+            </div>
+
+            <div>    
+                <h3 className="flex justify-start  text-[#2F4F4F] font-semibold m-4">Sobre mi</h3>
+                <span className="bg-[#F6F9FF] mr-40 text-start">texto que se usa habitualmente en diseño gráfico en demostraciones
+                     </span>
+            </div>
                 
         </div>
         </div>
         
 
-        <h3 className="flex justify-center">Sobre mi</h3>
-         <div className="text-center flex justify-center p-10 ">
-            
-         
-                <p> <input placeholder="lorem impustun"/></p>
-                
-         
-        </div>
+        
 
 
     </div>

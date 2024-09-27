@@ -17,7 +17,7 @@ import Layout from '@/components/Layout'
                  type="text"
                  name="email"
                  placeholder="Correo Electronico" 
-                 className="px-4 py-2 border bg-[#F9F9F9]  rounded-md text-sm font-medium text-[#546E7A] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] "/>
+                 className="px-10 py-2 border bg-[#F6F9FF] m-2 rounded-md text-sm font-medium text-[#546E7A] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] "/>
                   </div>
                  
                  <div>
@@ -25,7 +25,7 @@ import Layout from '@/components/Layout'
                  type="password"
                  name="contraseña"
                  placeholder="Contraseña"
-                 className="px-4 py-2 border bg-[#F9F9F9]  rounded-md text-sm font-medium text-[#546E7A] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] "/>
+                 className="px-10 py-2 border bg-[#F6F9FF]  m-2 rounded-md text-sm font-medium text-[#546E7A] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] "/>
                  
                  </div>
                  
@@ -34,7 +34,7 @@ import Layout from '@/components/Layout'
                  type="password"
                  name="confirmacion"
                  placeholder="Confirma Contraseña"
-                 className="px-4 py-2 border bg-[#F9F9F9]  rounded-md text-sm font-medium text-[#546E7A] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] "/>
+                 className="px-10 py-2 border bg-[#F6F9FF] m-2  rounded-md text-sm font-medium text-[#546E7A] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] "/>
                  </div>
             </form>
         </div>
@@ -45,7 +45,7 @@ import Layout from '@/components/Layout'
                  type="text"
                  name="Whatsaap"
                  placeholder="Numero de WhatsApp"
-                 className="px-4 py-2 border bg-[#F9F9F9]  rounded-md text-sm font-medium text-[#546E7A] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] "/>
+                 className="px-10 py-2 border bg-[#F6F9FF] m-2  rounded-md text-sm font-medium text-[#546E7A] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] "/>
                 </div>
                 
                  <div>
@@ -53,7 +53,7 @@ import Layout from '@/components/Layout'
                  type="password"
                  name="contraseña"
                  placeholder="Contraseña"
-                 className="px-4 py-2 border bg-[#F9F9F9]  rounded-md text-sm font-medium text-[#546E7A] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] "/>
+                 className="px-10 py-2 border bg-[#F6F9FF] m-2  rounded-md text-sm font-medium text-[#546E7A] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] "/>
                  </div>
                  
                  <div>
@@ -61,7 +61,7 @@ import Layout from '@/components/Layout'
                  type="password"
                  name="confirmacion"
                  placeholder="Confirma Contraseña"
-                 className="px-4 py-2 border bg-[#F9F9F9]  rounded-md text-sm font-medium text-[#546E7A] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] "/>
+                 className="px-10 py-2 border bg-[#F6F9FF] m-2  rounded-md text-sm font-medium text-[#546E7A] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] "/>
                  </div>
                 
             </form>
