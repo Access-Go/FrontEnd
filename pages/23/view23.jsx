@@ -24,7 +24,7 @@ const View23 = () => {
           <h1 className="text-2xl font-bold text-center mb-6 text-[#263238]">¡Cuentanos sobre ustedes!</h1>
           <p className="text-center mb-8 text-[#546E7A]">Para personalizar el perfil te pedimos que respondas los siguientes campos</p>
 
-          <div className="grid grid-cols-1 p-44 lg:grid-cols-[300px,1fr] gap-8">
+          <div className="grid lg:grid-cols-[300px,1fr] gap-8">
             <div className="flex flex-col items-center">
               <div className="w-40 h-40 bg-[#ECEFF1] rounded-full flex items-center justify-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-[#B0BEC5]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
