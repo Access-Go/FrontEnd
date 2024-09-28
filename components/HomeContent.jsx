@@ -1,7 +1,20 @@
 
 import EstablecimientoSlider from "./Molecules/establesamientoSlider";
 import ParticipaSlider from "./Molecules/participaSlider";
+import Image from 'next/image'
 
+
+export const categories = [
+  { name: 'Restaurantes', rating: 5 },
+  { name: 'Hoteles', rating: 5 },
+  { name: 'Turismo', rating: 5 },
+  { name: 'Espacios Comerciales', rating: 5 },
+  { name: 'Restaurantes', rating: 5 },
+  { name: 'Hoteles', rating: 5 },
+  { name: 'Turismo', rating: 5 },
+  { name: 'Espacios Comerciales', rating: 5 },
+ 
+]
 const HomeContent = () => {
   
 
@@ -32,116 +45,28 @@ const HomeContent = () => {
           <h3 className="text-2xl text-center md:text-left font-bold mb-2">Visita a nuestros socios</h3>
           <p className="text-center md:text-left">Para ti, que buscas un lugar para pasar un buen rato:</p>
           <div className="hidden md:flex flex-wrap justify-center gap-[17.5px] mt-[51px] mb-4">
-            <div className="relative border w-[215px] h-[257px] rounded">
-              <img 
-                src="/simon-karemann-p85-MG66GRY-unsplash 1.svg" 
-                alt="Imagen random de un lugar" 
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-black to-transparent w-full text-white">
-                <h4 className="text-[15px] font-bold">Restaurantes</h4>
-                <div className="flex items-center mb-1">
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
+          {categories.map((category, index) => (
+              <div key={index} className="relative rounded-lg w-[215px] h-[256px] shadow-md overflow-hidden">
+                <Image
+                  src="/img-card.png"
+                  alt={category.name}
+                  layout="fill"
+                  objectFit="cover"
+                  className="absolute inset-0 w-full h-full"
+                />
+                <div className="relative p-4 w-[215px] h-[256px] bg-black bg-opacity-50 flex flex-col justify-end">
+                  <h3 className="text-lg font-semibold text-white">{category.name}</h3>
+                  <div className="flex items-center mt-2">
+                    {[...Array(category.rating)].map((_, i) => (
+                      <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <p className="text-sm text-white mt-2">100% accesible</p>
                 </div>
-                <p className="text-[10px] mt-2">100% Acceso</p>
               </div>
-            </div>
-
-            <div className="relative border w-[215px] h-[257px] rounded">
-              <img 
-                src="/simon-karemann-p85-MG66GRY-unsplash 1.svg" 
-                alt="Imagen random de un lugar" 
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-black to-transparent w-full text-white">
-                <h4 className="text-[15px] font-bold">Hoteles</h4>
-                <div className="flex items-center mb-1">
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                </div>
-                <p className="text-[10px] mt-2">100% Acceso</p>
-              </div>
-            </div>
-            <div className="relative border w-[215px] h-[257px] rounded">
-              <img 
-                src="/simon-karemann-p85-MG66GRY-unsplash 1.svg" 
-                alt="Imagen random de un lugar" 
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-black to-transparent w-full text-white">
-                <h4 className="text-[15px] font-bold">Turismo</h4>
-                <div className="flex items-center mb-1">
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                </div>
-                <p className="text-[10px] mt-2">100% Acceso</p>
-              </div>
-            </div>
-            <div className="relative border w-[215px] h-[257px] rounded">
-              <img 
-                src="/simon-karemann-p85-MG66GRY-unsplash 1.svg" 
-                alt="Imagen random de un lugar" 
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-black to-transparent w-full text-white">
-                <h4 className="text-[15px] font-bold">Hospitales</h4>
-                <div className="flex items-center mb-1">
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                </div>
-                <p className="text-[10px] mt-2">100% Acceso</p>
-              </div>
-            </div>
-            <div className="relative border w-[215px] h-[257px] rounded custom-max:block hidden">
-            <img 
-                src="/simon-karemann-p85-MG66GRY-unsplash 1.svg" 
-                alt="Imagen random de un lugar" 
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-black to-transparent w-full text-white">
-                <h4 className="text-[15px] font-bold">Museos</h4>
-                <div className="flex items-center mb-1">
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                </div>
-                <p className="text-[10px] mt-2">100% Acceso</p>
-              </div>
-            </div>
-            <div className="relative border w-[215px] h-[257px] rounded custom-max:block hidden">
-            <img 
-                src="/simon-karemann-p85-MG66GRY-unsplash 1.svg" 
-                alt="Imagen random de un lugar" 
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-black to-transparent w-full text-white">
-                <h4 className="text-[15px] font-bold">Espacios Recreativos</h4>
-                <div className="flex items-center mb-1">
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                  <img src="/estrellita.svg" alt="star" className="w-4 h-4 mr-[3px]" />
-                </div>
-                <p className="text-[10px] mt-2">100% Acceso</p>
-              </div>
-
-            </div>
+            ))}
           </div>
 
         </div>
