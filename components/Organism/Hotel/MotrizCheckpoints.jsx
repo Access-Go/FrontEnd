@@ -3,7 +3,6 @@ const MotrizCheckpoints = () => (
       <div className="text-center">
        <h2 className="text-xl font-bold mb-4">Accesibilidad para Personas con Discapacidad Motriz</h2>
       </div>
-      {/* Accesos y Entradas */}
       <div>
         <h4 className="text-lg font-semibold mb-2">Accesos y Entradas:</h4>
         <ul className="list-none">
@@ -27,8 +26,6 @@ const MotrizCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Habitaciones */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Habitaciones:</h4>
         <ul className="list-none">
@@ -46,8 +43,6 @@ const MotrizCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Baños */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Baños:</h4>
         <ul className="list-none">
@@ -71,8 +66,6 @@ const MotrizCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Albercas y Playas */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Albercas y Playas (si aplicable):</h4>
         <ul className="list-none">
@@ -96,8 +89,6 @@ const MotrizCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Otras áreas recreativas */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Otras áreas recreativas:</h4>
         <ul className="list-none">
@@ -115,8 +106,6 @@ const MotrizCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Estacionamiento */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Estacionamiento:</h4>
         <ul className="list-none">

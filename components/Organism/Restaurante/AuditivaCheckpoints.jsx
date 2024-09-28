@@ -5,7 +5,6 @@ const RestAuditivaCheckpoints = () => {
        <div className="text-center">
         <h2 className="text-lg font-bold">Accesibilidad para Personas con Discapacidad Auditiva</h2>
         </div>
-        {/* Accesos y Entradas */}
         <div className="mt-4">
           <h4 className="text-lg font-semibold mb-2">Accesos y Entradas:</h4>
           <ul className="list-none">
@@ -23,8 +22,6 @@ const RestAuditivaCheckpoints = () => {
             </li>
           </ul>
         </div>
-
-        {/* Circulación Interior */}
         <div className="mt-4">
           <h4 className="text-lg font-semibold mb-2">Circulación Interior:</h4>
           <ul className="list-none">
@@ -42,8 +39,6 @@ const RestAuditivaCheckpoints = () => {
             </li>
           </ul>
         </div>
-  
-        {/* Mobiliario */}
         <div className="mt-4">
           <h4 className="text-lg font-semibold mb-2">Mobiliario:</h4>
           <ul className="list-none">
@@ -61,8 +56,6 @@ const RestAuditivaCheckpoints = () => {
             </li>
           </ul>
         </div>
-  
-        {/* Señalización */}
         <div className="mt-4">
           <h4 className="text-lg font-semibold mb-2">Señalización:</h4>
           <ul className="list-none">
@@ -80,8 +73,6 @@ const RestAuditivaCheckpoints = () => {
             </li>
           </ul>
         </div>
-  
-        {/* Sanitarios */}
         <div className="mt-4">
           <h4 className="text-lg font-semibold mb-2">Sanitarios:</h4>
           <ul className="list-none">
@@ -99,8 +90,6 @@ const RestAuditivaCheckpoints = () => {
             </li>
           </ul>
         </div>
-  
-        {/* Estacionamiento */}
         <div className="mt-4">
           <h4 className="text-lg font-semibold mb-2">Estacionamiento:</h4>
           <ul className="list-none">
@@ -118,8 +107,6 @@ const RestAuditivaCheckpoints = () => {
             </li>
           </ul>
         </div>
-  
-        {/* Perros de Servicio */}
         <div className="mt-4">
           <h4 className="text-lg font-semibold mb-2">Perros de Servicio:</h4>
           <ul className="list-none">

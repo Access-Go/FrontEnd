@@ -3,7 +3,6 @@ const NeurodivergentesCheckpoints = () => (
       <div className="text-center">
         <h2 className="text-xl font-bold mb-4">Accesibilidad para Personas Neurodivergentes</h2>
       </div>
-      {/* Accesos y Entradas */}
       <div>
         
         <h4 className="text-lg font-semibold mb-2">Accesos y Entradas:</h4>
@@ -22,8 +21,6 @@ const NeurodivergentesCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Habitaciones */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Habitaciones:</h4>
         <ul className="list-none">
@@ -47,8 +44,6 @@ const NeurodivergentesCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Baños */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Baños:</h4>
         <ul className="list-none">
@@ -66,8 +61,6 @@ const NeurodivergentesCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Áreas Comunes y Recreativas */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Áreas Comunes y Recreativas:</h4>
         <ul className="list-none">
@@ -85,8 +78,6 @@ const NeurodivergentesCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Señalización General */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Señalización General:</h4>
         <ul className="list-none">
@@ -104,8 +95,6 @@ const NeurodivergentesCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Estacionamiento */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Estacionamiento:</h4>
         <ul className="list-none">
@@ -123,8 +112,6 @@ const NeurodivergentesCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Personal Capacitado */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Personal Capacitado:</h4>
         <ul className="list-none">
@@ -142,8 +129,6 @@ const NeurodivergentesCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Perros de Asistencia o de Terapia */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Perros de Asistencia o de Terapia:</h4>
         <ul className="list-none">
@@ -155,8 +140,6 @@ const NeurodivergentesCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Asistencia en Actividades */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Asistencia en Actividades:</h4>
         <ul className="list-none">
