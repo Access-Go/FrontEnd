@@ -17,7 +17,7 @@ const SignUp = () => {
           </div>
           <div className="w-[250px] md:w-[400px] mt-4">
             <div className="mb-2">
-              <Link legacyBehavior href="">
+              <Link legacyBehavior href="#">
                 <a className="flex items-center rounded-full justify-between bg-[#F5F0E5] hover:bg-[#E0D7C6] px-4 py-2">
                 <Image src="/iconosLogin/icons8-logo-de-google-50.png" alt="Logo de Google" width={30} height={30} />
                   <span className="text-xs md:text-lg">Continúa con Google</span>
@@ -25,7 +25,7 @@ const SignUp = () => {
               </Link>
             </div>
             <div className="mb-2">
-              <Link legacyBehavior href="">
+              <Link legacyBehavior href="#">
                 <a className="flex items-center rounded-full justify-between bg-[#F5F0E5] hover:bg-[#E0D7C6] px-4 py-2">
                 <Image src="/iconosLogin/icons8-facebook-nuevo-50.png" alt="Logo de Facebook" width={30} height={30} />
                   <span className="text-xs md:text-lg">Continúa con Facebook</span>
@@ -33,7 +33,7 @@ const SignUp = () => {
               </Link>
             </div>
             <div className="mb-2">
-              <Link legacyBehavior href="">
+              <Link legacyBehavior href="#">
                 <a className="flex items-center rounded-full justify-between bg-[#F5F0E5] hover:bg-[#E0D7C6] px-4 py-2">
                 <Image src="/iconosLogin/icons8-mac-os-50.png" alt="Logo de Apple" width={30} height={30} />
                   <span className="text-xs md:text-lg">Continúa con Apple</span>
