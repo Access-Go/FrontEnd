@@ -1,4 +1,4 @@
-// components/LocalesList.jsx
+
 const LocalesList = () => [
   {
     img: '/simon-karemann-p85-MG66GRY-unsplash 1.svg',
