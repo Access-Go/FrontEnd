@@ -4,8 +4,6 @@ const RestNeurodivergenteCheckpoints = () => (
       <div className="text-center">
         <h2 className="text-xl font-bold mb-4">Accesibilidad para Personas Neurodivergentes</h2>
       </div>
-  
-      {/* Accesos y Entradas */}
       <div>
         <h4 className="text-lg font-semibold mb-2">Accesos y Entradas:</h4>
         <ul className="list-none">
@@ -23,8 +21,6 @@ const RestNeurodivergenteCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Ambiente Sensorial */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Ambiente Sensorial:</h4>
         <ul className="list-none">
@@ -48,8 +44,6 @@ const RestNeurodivergenteCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Circulación Interior */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Circulación Interior:</h4>
         <ul className="list-none">
@@ -67,8 +61,6 @@ const RestNeurodivergenteCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Mobiliario */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Mobiliario:</h4>
         <ul className="list-none">
@@ -86,8 +78,6 @@ const RestNeurodivergenteCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Menú y Pedidos */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Menú y Pedidos:</h4>
         <ul className="list-none">
@@ -105,8 +95,6 @@ const RestNeurodivergenteCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Señalización */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Señalización:</h4>
         <ul className="list-none">
@@ -124,8 +112,6 @@ const RestNeurodivergenteCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Sanitarios */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Sanitarios:</h4>
         <ul className="list-none">
@@ -143,8 +129,6 @@ const RestNeurodivergenteCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Perros de Asistencia o de Terapia */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Perros de Asistencia o de Terapia:</h4>
         <ul className="list-none">
@@ -156,8 +140,6 @@ const RestNeurodivergenteCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Personal Capacitado */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Personal Capacitado:</h4>
         <ul className="list-none">

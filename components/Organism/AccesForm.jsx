@@ -3,9 +3,7 @@ import Button from '../atoms/Button';
 import IconButton from '../atoms/IconButton';
 import EstablishmentSelect from '../Molecules/TipoEstablecimiento';
 import Checkpoints from './Checkpoints';
-
-
-
+import Link from 'next/link';
 
 const AccessForm = () => {
   const [selectedEstablishment, setSelectedEstablishment] = useState('');
@@ -38,10 +36,10 @@ const AccessForm = () => {
 
       <div className="flex flex-row justify-center mt-4 space-x-4 md:space-x-[200px]">
         <Button className="w-[155px] h-[40px] border-2 rounded-lg">
-        <a href="/signup" className="">Cancelar</a>
+        <Link legacyBehavior href="/signup" className=""><a >Cancelar</a></Link>
           </Button>
         <Button className="w-[155px] h-[40px] bg-[#2F4F4F] text-white rounded-lg flex items-center justify-center">
-          <a href="" className="">Continuar</a>
+          <Link legacyBehavior href="" className=""><a>Continuar</a></Link>
         </Button>
       </div>
     </div>

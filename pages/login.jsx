@@ -1,8 +1,7 @@
-// /pages/login.jsx
-
 import React from 'react';
 import LoginForm from '@/components/Organism/LoginForm';
 import Navbar from '@/components/Navbar';
+import Link from 'next/link';
 
 const LoginPage = () => {
   return (
@@ -16,9 +15,9 @@ const LoginPage = () => {
     </div>
 
     <div>
-      <a>
-        <p className='mt-4 text-[#2F4F4F] font-bold'>¿Olvidaste tu contraseña?</p>
-      </a>
+      <Link legacyBehavior>
+        <a className='mt-4 text-[#2F4F4F] font-bold'>¿Olvidaste tu contraseña?</a>
+      </Link>
     </div>
   </div>
   </div>
