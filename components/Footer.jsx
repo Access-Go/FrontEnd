@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -9,16 +10,16 @@ const Footer = () => {
         <p className="text-center cursor-pointer hover:font-bold">Contacto</p>
       </div>
       <div className='flex items-center justify-center space-x-3 mb-[10px]'>
-        <a href="">
-          <img src="/Vector - 0 (1).svg" alt="Logo de meta" 
-              className='transition-transform duration-300 hover:scale-110' />
-        </a>
+        <Link legacyBehavior href="">
+          <a ><img src="/Vector - 0 (1).svg" alt="Logo de meta" 
+              className='transition-transform duration-300 hover:scale-110' /></a>
+        </Link>
         
         <span>
-          <a href="">
-            <img src="/insta.svg" alt="Logo de Instagram" 
-                className='transition-transform duration-300 hover:scale-110 hover:font-bold' />
-          </a>
+          <Link legacyBehavior href="">
+            <a><img src="/insta.svg" alt="Logo de Instagram" 
+                className='transition-transform duration-300 hover:scale-110 hover:font-bold' /></a>
+          </Link>
         </span>
       </div>
       <div className='flex items-center justify-center'>

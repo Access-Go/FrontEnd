@@ -3,7 +3,6 @@ const VisualCheckpoints = () => (
       <div className="text-center">
       <h2 className="text-xl font-bold mb-4">Accesibilidad para Personas con Discapacidad Visual</h2>
       </div>
-      {/* Accesos y Entradas */}
       <div>
         <h4 className="text-lg font-semibold mb-2">Accesos y Entradas:</h4>
         <ul className="list-none">
@@ -27,8 +26,6 @@ const VisualCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Habitaciones */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Habitaciones:</h4>
         <ul className="list-none">
@@ -52,8 +49,6 @@ const VisualCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Baños */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Baños:</h4>
         <ul className="list-none">
@@ -71,8 +66,6 @@ const VisualCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Áreas Comunes y Recreativas */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Áreas Comunes y Recreativas:</h4>
         <ul className="list-none">
@@ -96,8 +89,6 @@ const VisualCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Señalización General */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Señalización General:</h4>
         <ul className="list-none">
@@ -115,8 +106,6 @@ const VisualCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Estacionamiento */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Estacionamiento:</h4>
         <ul className="list-none">
@@ -134,8 +123,6 @@ const VisualCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Perros Guía */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Perros Guía:</h4>
         <ul className="list-none">
@@ -153,8 +140,6 @@ const VisualCheckpoints = () => (
           </li>
         </ul>
       </div>
-  
-      {/* Asistencia y Personal */}
       <div className="mt-4">
         <h4 className="text-lg font-semibold mb-2">Asistencia y Personal:</h4>
         <ul className="list-none">
