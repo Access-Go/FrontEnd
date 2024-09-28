@@ -24,9 +24,9 @@ const View21 = () => {
         <div className="container mx-auto px-4 py-8 max-w-4xl">
           <h1 className="text-4xl md:text-5xl font-bold text-center text-[#2F4F4F] mb-12">¡Bienvenido!</h1>
 
-          <div className="flex flex-col md:flex-row gap-12 p-6 max-w-4xl mx-auto">
-            <div className="flex justify-center space-x-8">
-              <div className="bg-gradient-to-b from-[#ECEFF1] to-white w-[231px] h-[360px] rounded-[25px] shadow-md p-6 text-center">
+          <div className="flex flex-col lg:flex-row gap-6 p-6 max-w-4xl mx-auto">
+            <div className="w-full lg:w-1/3 flex justify-center">
+              <div className="bg-gradient-to-b from-[#ECEFF1] to-white w-full max-w-[231px] h-auto rounded-[25px] shadow-md p-6 text-center">
                 <Image
                   src="/perfil1.png"
                   alt="Foto de perfil"
@@ -38,10 +38,10 @@ const View21 = () => {
               </div>
             </div>
 
-            <div className="flex flex-col h-[346px] w-[518px] md:flex-row md:justify-between md:items-center mb-4">
-              <div className="bg-white rounded-[30px] shadow-md p-6 max-w-2xl mx-auto">
+            <div className="w-full  lg:w-2/3 flex flex-col justify-center">
+              <div className="bg-white rounded-[30px] shadow-md p-6 w-full">
                 <div className="flex flex-col md:flex-row md:justify-start gap-4 md:items-center mb-4">
-                  <h3 className="text-lg font-semibold text-[#2F4F4F] mb-2 md:mb-0">Tu calificación es de :</h3>
+                  <h3 className="text-lg font-semibold text-[#2F4F4F] mb-2 md:mb-0">Tu calificación es de:</h3>
                   <div className="flex">
                     {[...Array(5)].map((_, i) => (
                       <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
@@ -51,8 +51,8 @@ const View21 = () => {
                   </div>
                 </div>
 
-                <h3 className="text-lg font-semibold mb-2">Ultimos comentarios:</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4 ">
+                <h3 className="text-lg font-semibold mb-2">Últimos comentarios:</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   {userData.comments.map(comment => (
                     <p key={comment.id} className="bg-[#F5F0E5] p-2 rounded text-center text-sm">{comment.text}</p>
                   ))}
@@ -99,6 +99,45 @@ const View21 = () => {
               </button>
             </div>
           </div>
+
+          {/* <div className="mt-12 text-center">
+            <h3 className="text-xl font-semibold mb-4 text-[#2F4F4]">Cambia tus imágenes</h3>
+            <div className="flex flex-col items-center space-y-4">
+              {userData.images.map((image, index) => (
+                <div key={image.id} className="relative">
+                  <Image
+                    src='/Vector.png'
+                    alt={image.alt}
+                    width={100}
+                    height={100}
+                    className="rounded-lg"
+                  />
+                </div>
+              ))}
+              <div className="flex space-x-8 justify-center">
+                <button className="bg-[#577070] text-white p-2 rounded-[20px] w-[58px] h-[52px] hover:bg-green-800 transition-colors">
+                  <Image
+                    src="/Mas.png"
+                    alt="Agregar más imágenes"
+                    width={37}
+                    height={36}
+                    className="rounded-full mx-auto"
+                  />
+                </button>
+                <button className="bg-[#577070] text-white p-2 rounded-[20px] w-[58px] h-[52px] hover:bg-green-800 transition-colors">
+                  <Image
+                    src="/Basura.png"
+                    alt="Eliminar imagen"
+                    width={27}
+                    height={31}
+                    className="rounded-full mx-auto"
+                  />
+                </button>
+              </div>
+            </div>
+          </div> */}
+
+
         </div>
       </Layout>
     </>
