@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout'
 import Image from 'next/image'
 import EstablecimientoSlider from '@/components/Molecules/establesamientoSlider'
+import { StyledButton } from '@/components/atoms/Index'
 
 
 export const categories = [
@@ -64,12 +65,8 @@ const view2 = () => {
           </div>
 
           <div className="flex justify-center space-x-4 my-12">
-            <button className="px-6 py-3 bg-[#2F4F4F] text-white rounded-full font-semibold">
-              ¿Quieres ser voluntario?
-            </button>
-            <button className="px-6 py-3 bg-[#2F4F4F] text-white rounded-full font-semibold hidden sm:block">
-              ¿Quieres hacer un donativo?
-            </button>
+            <StyledButton variant="verdeCurvo">¿Quieres ser voluntario?</StyledButton>
+            <StyledButton variant="verdeCurvo">¿Quieres hacer un donativo?</StyledButton>
           </div>
 
           <h2 className="text-2xl font-bold text-center text-gray-800 mt-16 mb-12">

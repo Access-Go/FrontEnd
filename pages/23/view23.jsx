@@ -1,6 +1,8 @@
+import { StyledButton,  } from '@/components/atoms/Index';
+import { InputWithLabel } from '@/components/atoms/Input';
 import Layout from '@/components/Layout';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const View23 = () => {
 
@@ -24,7 +26,7 @@ const View23 = () => {
           <h1 className="text-2xl font-bold text-center mb-6 text-[#263238]">¡Cuentanos sobre ustedes!</h1>
           <p className="text-center mb-8 text-[#546E7A]">Para personalizar el perfil te pedimos que respondas los siguientes campos</p>
 
-          <div className="grid grid-cols-1 p-44 lg:grid-cols-[300px,1fr] gap-8">
+          <div className="grid lg:grid-cols-[300px,1fr] gap-8">
             <div className="flex flex-col items-center">
               <div className="w-40 h-40 bg-[#ECEFF1] rounded-full flex items-center justify-center mb-4">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-[#B0BEC5]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -35,43 +37,33 @@ const View23 = () => {
               <button className="px-4 py-2 border bg-[#F9F9F9] rounded-md text-sm font-medium text-[#546E7A] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] md:hidden">
                 Actualizar foto de perfil
               </button>
-              <input
-                type="text"
-                placeholder="Nombre"
-                className="mt-4 w-full px-3 py-2 border border-[#B0BEC5] bg-[#F9F9F9] rounded-md text-[#263238] placeholder-[#78909C] focus:outline-none focus:ring-2 focus:ring-[#B0BEC5] focus:border-transparent focus:bg-blue-50"
-              />
+              <InputWithLabel placeholder='Nombre' />
             </div>
 
             <div className="space-y-6">
               <h2 className="text-xl font-semibold text-[#263238]">Datos del negocio</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="nombre-comercial" className="block text-sm font-medium text-[#546E7A] mb-1">Nombre comercial de tu negocio</label>
-                  <input
-                    type="text"
-                    id="nombre-comercial"
-                    placeholder="Ingresar dato"
-                    className="w-full px-3 py-2 border border-[#B0BEC5] bg-[#F9F9F9] rounded-md text-[#263238] placeholder-[#78909C] focus:outline-none focus:ring-2 focus:ring-[#B0BEC5] focus:border-transparent focus:bg-blue-50"
+                  <InputWithLabel
+                    label='Nombre comercial de tu negocio'
+                    id='nombre-comercial'
+                    placeholder='Ingresar dato'
                   />
                 </div>
                 <div>
-                  <label htmlFor="rfc" className="block text-sm font-medium text-[#546E7A] mb-1">RFC</label>
-                  <input
-                    type="text"
-                    id="rfc"
-                    placeholder="Ingresar dato"
-                    className="w-full px-3 py-2 border border-[#B0BEC5] bg-[#F9F9F9] rounded-md text-[#263238] placeholder-[#78909C] focus:outline-none focus:ring-2 focus:ring-[#B0BEC5] focus:border-transparent focus:bg-blue-50"
+                  <InputWithLabel
+                    label='RFC'
+                    id='rfc'
+                    placeholder='Ingresar dato'
                   />
                 </div>
               </div>
               <div>
                 <label htmlFor="persona-moral" className="block text-sm font-medium text-[#546E7A] mb-1">Persona moral</label>
-                <label htmlFor="persona-moral" className="block text-sm font-medium text-[#546E7A] mb-1">Nombre y apellido representante legal del negocio</label>
-                <input
-                  type="text"
-                  id="persona-moral"
-                  placeholder="Ingresar dato"
-                  className="w-full px-3 py-2 border border-[#B0BEC5] bg-[#F9F9F9] rounded-md text-[#263238] placeholder-[#78909C] focus:outline-none focus:ring-2 focus:ring-[#B0BEC5] focus:border-transparent focus:bg-blue-50"
+                <InputWithLabel
+                  label='Nombre y apellido representante legal del negocio'
+                  id='persona-moral'
+                  placeholder='Ingresar dato'
                 />
               </div>
               <div className="grid md:grid-cols-2 gap-4">
@@ -126,12 +118,10 @@ const View23 = () => {
                 </div>
               </div>
               <div>
-                <label htmlFor="direccion" className="block text-sm font-medium text-[#546E7A] mb-1">Dirección de tu negocio</label>
-                <input
-                  type="text"
-                  id="direccion"
-                  placeholder="Ingresar dato"
-                  className="w-full px-3 py-2 border border-[#B0BEC5] bg-[#F9F9F9] rounded-md text-[#263238] placeholder-[#78909C] focus:outline-none focus:ring-2 focus:ring-[#B0BEC5] focus:border-transparent focus:bg-blue-50"
+                <InputWithLabel
+                  label='Dirección de tu negocio'
+                  id='direccion'
+                  placeholder='Ingresar dato'
                 />
               </div>
               <div className="aspect-video relative rounded-md overflow-hidden">
@@ -145,12 +135,8 @@ const View23 = () => {
             </div>
           </div>
           <div className="mt-8 flex justify-center md:justify-end space-x-4">
-            <button className="px-6 py-2 border border-[#2F4F4F] bg-[#F9F9F9] rounded-md text-sm font-medium text-[#2F4F4F] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] hidden md:inline-block">
-              CANCELAR
-            </button>
-            <button className="px-6 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#2F4F4F] hover:bg-[#004D40] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00695C]">
-              CONTINUAR
-            </button>
+            <StyledButton variant="blancoCuadrado">CANCELAR</StyledButton>
+            <StyledButton variant="verdeCuadrado">CONTINUAR</StyledButton>
           </div>
         </div>
       </Layout>
