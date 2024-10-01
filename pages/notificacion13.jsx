@@ -1,4 +1,6 @@
 import Layout from '../components/Layout';
+import Link from 'next/link';
+
 
 export default function Notificacion() {
   return (
@@ -67,12 +69,10 @@ export default function Notificacion() {
           </div>
         </div>
         <div className='flex flex-row justify-between items center mt-10'>
-          <button className='w-[155px] lg:w-[200px] h-[40px] lg:h-[50px] border-2 rounded-lg'>
-            Cancelar
-          </button>
-          <button className='w-[155px] lg:w-[200px] h-[40px] lg:h-[50px] bg-[#2F4F4F] text-white rounded-lg'>
-            Continuar
-          </button>
+            <button className='w-[155px] h-[40px] border-2 rounded-lg'>Cancelar</button>
+            <Link legacyBehavior href="/formularioAccesibilidad" >
+             <a className='w-[155px] h-[40px] bg-[#2F4F4F] text-white rounded-lg flex items-center justify-center'>Continuar</a></Link>
+                         
         </div>
       </div>
     </Layout>
