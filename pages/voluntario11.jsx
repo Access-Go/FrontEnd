@@ -43,13 +43,12 @@ export default function Voluntario() {
           <input className='w-[328px] h-[200px] lg:w-2/3 border border-gray-300 rounded-lg mt-8' type='text' />
         </div>
 
-        <div className='w-[328px] h-[290px] bg-cover bg-center flex justify-center items-center mt-10 '>
-          <p className=' font-semibold text-xs'>¡Tu Participación Puede Hacer Una Gran Diferencia!</p>
-          <p className='text-xs md:text-sm lg:text-sm aling-self-center '>
+        <div className='flex flex-col justify-center items-left w-full h-[290px] md:h-[328px] lg:h-[590px] bg-local bg-cover bg-center bg-[url("/raultemporaryImages/imagenCardPremium.png")] bg-no-repeat mt-10 '>
+          <p className='w-[60%] text-center font-semibold text-xs md:text-base lg:text-2xl mr-16'>¡Tu Participación Puede Hacer Una Gran Diferencia!</p>
+          <p className='w-[60%] text-center text-xs md:text-base lg:text-lg mr-16 mt-4 md:mt-8 lg:mt-12'>
             Gracias por considerar unirte a estas organizaciones y ayudar a
             construir una comunidad más inclusiva y solidaria.
           </p>
-          <img className='mt-2' src='raultemporaryImages/imagenCardPremium.png' alt='' />
 
         </div>
       </div>
