@@ -87,7 +87,7 @@ const HomeContent = () => {
           <p className="text-center md:text-left">Sé parte del cambio y muestra tu compromiso con la accesibilidad</p>
           <ul className="hidden sm:flex  sm:flex-row items-center justify-center space-x-0 sm:space-x-4 mt-3">
           <Link legacyBehavior href="/voluntario11" >
-            <li className="card border rounded w-[223px] h-[178px] mb-4 sm:mb-0 cursor-pointer">
+            <li className="card border rounded w-[223px] rounded-[8px] border-[#E8DECF] h-[178px] mb-4 sm:mb-0 cursor-pointer">
               <div><img className="w-[24px] h-[24px] mt-[16px] ml-[16px] mb-[13px]" src="/ayudar.png" alt="un saludo que establece el acuerdo de ayudar al prógimo" /></div>
               <div><p className="ml-[16px] font-bold">Voluntariado</p>
               <p className="ml-[16px]">Únete a nuestra red de voluntariado y contribuye con tu tiempo y habilidades.</p>
@@ -95,7 +95,7 @@ const HomeContent = () => {
             </li>
             </Link>
             <Link legacyBehavior href="/donacion12" >
-            <li className="card rounded border w-[223px] h-[178px] mb-4 sm:mb-0 cursor-pointer"><div><img className="w-[24px] h-[24px] mt-[16px] ml-[16px] mb-[13px]" src="/donar.svg" alt="un saludo que establece el acuerdo de ayudar al prógimo" /></div>
+            <li className="card rounded-[8px] border w-[223px] h-[178px] border-[#E8DECF] mb-4 sm:mb-0 cursor-pointer"><div><img className="w-[24px] h-[24px] mt-[16px] ml-[16px] mb-[13px]" src="/donar.svg" alt="un saludo que establece el acuerdo de ayudar al prógimo" /></div>
               <div><p className="ml-[16px] font-bold">Donaciones</p>
               <p className="ml-[16px]">Apoya con donaciones para mejorar la accesibilidad en diferentes lugares.</p>
               </div></li>
