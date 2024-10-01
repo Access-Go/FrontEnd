@@ -2,6 +2,7 @@
 import EstablecimientoSlider from "./Molecules/establesamientoSlider";
 import ParticipaSlider from "./Molecules/participaSlider";
 import Image from 'next/image'
+import Link from 'next/link';
 
 
 export const categories = [
@@ -39,37 +40,39 @@ const HomeContent = () => {
             </div>
           </div>
 
-
-         
-        <div className=" mx-2 md:mx-[25px]">
-          <h3 className="text-2xl text-center md:text-left font-bold mb-2">Visita a nuestros socios</h3>
-          <p className="text-center md:text-left">Para ti, que buscas un lugar para pasar un buen rato:</p>
-          <div className="hidden md:flex flex-wrap justify-center gap-[17.5px] mt-[51px] mb-4">
-          {categories.map((category, index) => (
-              <div key={index} className="relative rounded-lg w-[215px] h-[256px] shadow-md overflow-hidden">
-                <Image
-                  src="/img-card.png"
-                  alt={category.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="absolute inset-0 w-full h-full"
-                />
-                <div className="relative p-4 w-[215px] h-[256px] bg-black bg-opacity-50 flex flex-col justify-end">
-                  <h3 className="text-lg font-semibold text-white">{category.name}</h3>
-                  <div className="flex items-center mt-2">
-                    {[...Array(category.rating)].map((_, i) => (
-                      <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
-                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
-                      </svg>
-                    ))}
-                  </div>
-                  <p className="text-sm text-white mt-2">100% accesible</p>
-                </div>
+<div className=" mx-2 md:mx-[25px]">
+  <h3 className="text-2xl text-center md:text-left font-bold mb-2">Visita a nuestros socios</h3>
+  <p className="text-center md:text-left">Para ti, que buscas un lugar para pasar un buen rato:</p>
+  <div className="hidden md:flex flex-wrap justify-center gap-[17.5px] mt-[51px] mb-4">
+    {categories.map((category, index) => (
+      <Link legacyBehavior href="/2/view2" key={index}>
+        <a>
+          <div className="relative rounded-lg w-[215px] h-[256px] shadow-md overflow-hidden">
+            <Image
+              src="/img-card.png"
+              alt={category.name}
+              layout="fill"
+              objectFit="cover"
+              className="absolute inset-0 w-full h-full"
+            />
+            <div className="relative p-4 w-[215px] h-[256px] bg-black bg-opacity-50 flex flex-col justify-end">
+              <h3 className="text-lg font-semibold text-white">{category.name}</h3>
+              <div className="flex items-center mt-2">
+                {[...Array(category.rating)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" />
+                  </svg>
+                ))}
               </div>
-            ))}
+              <p className="text-sm text-white mt-2">100% accesible</p>
+            </div>
           </div>
+        </a>
+      </Link>
+    ))}
+  </div>
+</div>
 
-        </div>
   
 
         <div className="md:hidden mt-2 flex justify-center">
@@ -83,16 +86,20 @@ const HomeContent = () => {
           <h3 className="text-2xl text-center md:text-left font-bold mb-2">Y también para ti, que buscas ser parte del cambio:</h3>
           <p className="text-center md:text-left">Sé parte del cambio y muestra tu compromiso con la accesibilidad</p>
           <ul className="hidden sm:flex  sm:flex-row items-center justify-center space-x-0 sm:space-x-4 mt-3">
-            <li className="card border rounded w-[223px] h-[178px] mb-4 sm:mb-0">
+          <Link legacyBehavior href="/voluntario11" >
+            <li className="card border rounded w-[223px] h-[178px] mb-4 sm:mb-0 cursor-pointer">
               <div><img className="w-[24px] h-[24px] mt-[16px] ml-[16px] mb-[13px]" src="/ayudar.png" alt="un saludo que establece el acuerdo de ayudar al prógimo" /></div>
               <div><p className="ml-[16px] font-bold">Voluntariado</p>
               <p className="ml-[16px]">Únete a nuestra red de voluntariado y contribuye con tu tiempo y habilidades.</p>
               </div>
             </li>
-            <li className="card rounded border w-[223px] h-[178px] mb-4 sm:mb-0"><div><img className="w-[24px] h-[24px] mt-[16px] ml-[16px] mb-[13px]" src="/donar.svg" alt="un saludo que establece el acuerdo de ayudar al prógimo" /></div>
+            </Link>
+            <Link legacyBehavior href="/donacion12" >
+            <li className="card rounded border w-[223px] h-[178px] mb-4 sm:mb-0 cursor-pointer"><div><img className="w-[24px] h-[24px] mt-[16px] ml-[16px] mb-[13px]" src="/donar.svg" alt="un saludo que establece el acuerdo de ayudar al prógimo" /></div>
               <div><p className="ml-[16px] font-bold">Donaciones</p>
               <p className="ml-[16px]">Apoya con donaciones para mejorar la accesibilidad en diferentes lugares.</p>
               </div></li>
+              </Link>
           </ul>
 
           <div className="md:hidden mt-3 flex justify-center">
