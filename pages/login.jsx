@@ -13,8 +13,8 @@ const LoginPage = () => {
           <LoginForm />
         </div>
 
-        <div>
-          <Link legacyBehavior href="/"> 
+        <div className='flex flex-col items-center justify-center w-full'>
+          <Link legacyBehavior href="/25/view25"> 
             <a className='mt-4 text-[#2F4F4F] font-bold'>¿Olvidaste tu contraseña?</a>
           </Link>
         </div>
