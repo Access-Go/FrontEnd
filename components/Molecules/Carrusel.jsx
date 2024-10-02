@@ -1,63 +1,95 @@
-// components/Carousel.jsx
-import { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
-const Carousel = ({ slides }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const Carousel = ({ children }) => {
+  const [currentIndex, setCurrentIndex] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const length = React.Children.count(children);
+  const carouselRef = useRef();
+
+  // Clonamos el primer y el último elemento
+  const clonedChildren = [
+    React.cloneElement(children[length - 1]),
+    ...children,
+    React.cloneElement(children[0])
+  ];
+
+  useEffect(() => {
+    const handleTransitionEnd = () => {
+      setIsTransitioning(false);
+      if (currentIndex === 0) {
+        setCurrentIndex(length);
+        carouselRef.current.style.transition = 'none';
+        carouselRef.current.style.transform = `translateX(-${length * 100}%)`;
+      } else if (currentIndex === length + 1) {
+        setCurrentIndex(1);
+        carouselRef.current.style.transition = 'none';
+        carouselRef.current.style.transform = `translateX(-100%)`;
+      }
+    };
+
+    const carouselElement = carouselRef.current;
+    carouselElement.addEventListener('transitionend', handleTransitionEnd);
+
+    return () => {
+      carouselElement.removeEventListener('transitionend', handleTransitionEnd);
+    };
+  }, [currentIndex, length]);
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    if (!isTransitioning) {
+      setIsTransitioning(true);
+      setCurrentIndex((prevIndex) => prevIndex + 1);
+      carouselRef.current.style.transition = 'transform 0.5s ease-in-out';
+      carouselRef.current.style.transform = `translateX(-${(currentIndex + 1) * 100}%)`;
+    }
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length);
+    if (!isTransitioning) {
+      setIsTransitioning(true);
+      setCurrentIndex((prevIndex) => prevIndex - 1);
+      carouselRef.current.style.transition = 'transform 0.5s ease-in-out';
+      carouselRef.current.style.transform = `translateX(-${(currentIndex - 1) * 100}%)`;
+    }
+  };
+
+  // Función para deshabilitar deslizamiento táctil
+  const handleTouchStart = (e) => {
+    e.preventDefault();
+  };
+
+  const handleTouchMove = (e) => {
+    e.preventDefault();
   };
 
   return (
-    <div className="relative w-full overflow-hidden">
-      {/* Slides */}
+    <div
+      className="relative w-full overflow-hidden"
+      onTouchStart={handleTouchStart} // Desactiva el inicio de toques
+      onTouchMove={handleTouchMove}   // Desactiva el movimiento táctil
+    >
       <div
+        ref={carouselRef}
         className="flex transition-transform duration-500"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
-        {slides.map((slide, index) => (
+        {React.Children.map(clonedChildren, (child, index) => (
           <div key={index} className="min-w-full flex justify-center">
-            <div className="relative border w-[215px] h-[257px] rounded">
-              <img 
-                src={slide.img} 
-                alt={`Imagen de ${slide.label}`} 
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute bottom-0 left-0 p-2 bg-gradient-to-t from-black to-transparent w-full text-white">
-                <h4 className="text-[15px] font-bold">{slide.label}</h4>
-                <div className="flex items-center mb-1">
-                  {Array(slide.rating).fill().map((_, i) => (
-                    <img 
-                      key={i} 
-                      src="/estrellita.svg" 
-                      alt="star" 
-                      className="w-4 h-4 mr-[3px]" 
-                    />
-                  ))}
-                </div>
-                <p className="text-[10px] mt-2">{slide.access}</p>
-              </div>
-            </div>
+            {child}
           </div>
         ))}
       </div>
-
-      {/* Botones de navegación */}
       <button
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white rounded-full p-2"
+        className="absolute bg-[#748E2F] top-1/2 left-4 transform -translate-y-1/2 rounded-full p-2 w-10 h-10 flex items-center justify-center"
         onClick={prevSlide}
       >
-        &lt;
+        <span className="text-white text-xl">&lt;</span>
       </button>
       <button
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white rounded-full p-2"
+        className="absolute bg-[#748E2F] top-1/2 right-4 transform -translate-y-1/2 rounded-full p-2 w-10 h-10 flex items-center justify-center"
         onClick={nextSlide}
       >
-        &gt;
+        <span className="text-white text-xl">&gt;</span>
       </button>
     </div>
   );
