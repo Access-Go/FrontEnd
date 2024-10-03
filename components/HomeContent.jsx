@@ -33,7 +33,7 @@ const HomeContent = () => {
 
             <div className="flex justify-center items-center">
               <img 
-                className="h-200px md:h-[400px]" 
+                className="h-[220px] md:h-[400px]" 
                 src="/Group 4717@2x.png" 
                 alt="Tarjetas con tres imágenes de personas con discapacidad siendo incluidas en diferentes escenarios, de títulos: Accesibilidad, Inclusión, AccessGo" 
               />
