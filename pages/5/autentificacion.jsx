@@ -1,10 +1,10 @@
 import React from "react";
-import Layout from '@/components/Layout'
+
 
  const view5 = () => {
     return <>
-    <Layout>
-    <div>
+    
+    <div className="max-w-md w-full mx-auto">
         <h1 className="text-center text-2xl text-[#2F4F4F] p-10 font-bold">¡Revisa tu correo o tu WhatsApp</h1>
         <h3 className="text-center text-[#2F4F4F] p-10 font-bold">Te hemos enviado un codigo de verificacion. A continuacion escribe el 
             codigo que te enviamos para validar tu cuenta
@@ -34,8 +34,7 @@ import Layout from '@/components/Layout'
 
     </div>
 
-    </Layout>
-
+   
     </>
 }
 

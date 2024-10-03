@@ -1,13 +1,17 @@
 import React from "react";
-import Layout from '@/components/Layout'
+
 
 
 
  const view4 = () => {
-    return <>
-    <Layout>
-    <div>
-        <h1 className="text-center text-2xl p-10 font-bold">Bienvenid@ a AccessGo</h1>
+    return  (
+       
+    
+
+        <div className="max-w-md w-full mx-auto"> 
+
+        
+        <h1 className=" text-center text-2xl p-10 text-[#2F4F4F] font-bold">Bienvenid@ a AccessGo</h1>
 
         <div className="text-center flex justify-center p-10 ">
             <form>
@@ -67,7 +71,7 @@ import Layout from '@/components/Layout'
             </form>
             
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center py-5">
              <button className="px-6 py-2 border border-transparent rounded-md shadow-sm
               text-white bg-[#2F4F4F] hover:bg-[#004D40] focus:outline-none
               focus:ring-2 focus:ring-offset-2 focus:ring-[#00695C]">Inicia Sesion</button>
@@ -77,9 +81,9 @@ import Layout from '@/components/Layout'
        
 
     </div>
-    </Layout>
+    
 
-    </>
+    )
 }
 
 export default view4; 
