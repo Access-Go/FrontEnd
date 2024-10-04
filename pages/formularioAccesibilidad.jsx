@@ -4,11 +4,10 @@ import AccessGoForm from '@/components/Organism/AccesForm';
 
 const AccessInfo = () => {
   return (
-    <div>
- 
-    <div className='flex flex-col items-center md:justify-start mt-3 h-screen bg-white'>
-      <AccessGoForm />
-    </div>
+    <div className='container mx-auto px-4 py-8 max-w-4xl'>
+      <div className='w-full lg:w-1/3 flex justify-center'>
+        <AccessGoForm />
+      </div>
     </div>
   );
 }
