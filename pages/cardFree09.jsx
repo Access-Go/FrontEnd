@@ -8,7 +8,7 @@ export default function CardFree() {
           ¡AccessGo!
         </p>
         <img
-          className='w-[236px] h-[300px] md:w-[623px] md:h-[250px] lg:w-[652px] lg:h-[250px] mt-8'
+          className='w-[236px] h-[300px] md:w-[632px] md:h-[250px] lg:w-[652px] lg:h-[250px] mt-8 object-cover'
           src='/img-card.png'
           alt=''
         />
@@ -47,7 +47,7 @@ export default function CardFree() {
             />
           </div>
 
-          <p className='w-full text-sm text-[#455A64] lg:text-lg mt-2'>
+          <p className='w-full md:w-3/4 text-sm text-[#455A64] lg:text-lg mt-2'>
             CIELITO ® es un refugio único que inspirado en nuestra historia y
             calidez latina, reinventa la experiencia de tomar café...
           </p>
@@ -98,7 +98,7 @@ export default function CardFree() {
           <option value='Place'>Juarez 6600 Ciudad de Mexico</option>
         </select>
 
-        <div className='w-[200px] h-[40px] md:w-[220px] md:h-[45px] lg:w-[250px] lg:h-[50px] mt-6 flex justify-center items-center self-center shadow-lg shadow-[0_2.782px_22.975px_0px_rgba(85,98,105,0.20)]  border border-[#231b1b6b] rounded-2xl '>
+        <div className='w-[200px] h-[40px] md:w-[220px] md:h-[45px] lg:w-[250px] lg:h-[50px] mt-6 flex justify-center items-center self-center shadow-md shadow-gray-300 border border-[#231b1b6b] rounded-2xl '>
           <img
             className='mx-4 w-[22px] h-[25px] md:w-[25px] md:h-[28px] lg:w-[28px] lg:h-[30px]'
             src='iconsBlue/motorDisabilityIcon.png'
@@ -124,13 +124,13 @@ export default function CardFree() {
 
       <section className='w-full h-full mt-6 flex flex-col '>
         <button
-          className='p-0 w-[196px] h-[28px] md:w-[210px] md:h-[36px] lg:w-[240px] lg:h-[44px] bg-[#2F4F4F] rounded-full text-sm md:text-base lg:text-lg text-center text-white self-center'
+          className='p-0 w-[196px] h-[28px] md:w-[210px] md:h-[36px] lg:w-[240px] lg:h-[44px] bg-[#2F4F4F] rounded-full text-sm md:text-base lg:text-lg text-center text-white self-center shadow-md shadow-lime-950 '
           href=''
         >
           Dejar un comentario
         </button>
 
-        <div className='w-full border rounded-lg mt-6'>
+        <div className='w-full border border-[#CFD8DC] rounded-lg mt-6'>
           <div className='flex flex-row items-center'>
             <img
               className='w-[39px] h-[45px] md:w-[42px] md:h-[50px] lg:w-[48px] lg:h-[55px] rounded-full p-1'
@@ -138,7 +138,7 @@ export default function CardFree() {
               alt=''
             />
             <p className='text-center md:text-base lg:text-lg ml-2'>Jhon Doe</p>
-            <div className='flex flex-rows ml-8 mb-2 '>
+            <div className='flex flex-rows md:self-right ml-8 mb-2 '>
               <img
                 className='w-[20px] h-[20px] md:w-[24px] md:h-[24px] lg:w-[28px] lg:h-[28px]'
                 src='/estrellita.svg'
