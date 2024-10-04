@@ -21,9 +21,9 @@ const HomeContent = () => {
 
 
   return (
-    <div className="flex flex-col text-[#2F4F4F] w-full justify-center font-sans">
+    <div className="flex flex-col text-[#2F4F4F] w-full p-4 justify-center font-sans">
 
-      <div className="flex flex-col md:items-center md:flex-row gap-4 mx-[25px] p-2 text-[#2F4F4F]">
+      <div className="flex flex-col md:items-center md:flex-row gap-4 mx-[40px] p-2 text-[#2F4F4F]">
         <div className="flex-1 text-center md:text-left mt-[10px]">
           <p className="text-center mt-[8px] md:text-left">Encuentra tu lugar favorito</p>
           <h1 className="text-4xl font-bold mb-2">¡Bienvenido a AccessGo!</h1>
