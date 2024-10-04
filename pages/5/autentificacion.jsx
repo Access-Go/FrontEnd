@@ -28,15 +28,17 @@ import Link from 'next/link';
               </div>
             </div>
           </div>
-            */link a pagina 20 /*
+
           <div className='flex justify-center items-center py-5'>
-            <button
-              className='px-6 py-2 border border-transparent rounded-md shadow-sm
+            <Link legacyBehavior href='/login'>
+              <button
+                className='px-6 py-2 border border-transparent rounded-md shadow-sm
               text-white bg-[#2F4F4F] hover:bg-[#004D40] focus:outline-none
               focus:ring-2 focus:ring-offset-2 focus:ring-[#00695C]'
-            >
-              Inicia Sesion
-            </button>
+              >
+                Inicia Sesion
+              </button>
+            </Link>
           </div>
         </div>
       </>
