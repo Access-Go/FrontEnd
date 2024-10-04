@@ -1,6 +1,6 @@
 const AuditivaCheckpoints = () => (
     <div>
-      <div className="text-center">
+      <div className="text-center ">
         <h2 className="text-xl font-bold mb-4">Accesibilidad para Personas con Discapacidad Auditiva</h2>
       </div>
        <div>
