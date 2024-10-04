@@ -5,7 +5,7 @@ import Layout from '@/components/Layout'
 
  const view4 = () => {
     return <>
-    <Layout>
+   
     <div>
         <h1 className="text-center text-2xl p-10 font-bold">Bienvenid@ a AccessGo</h1>
 
@@ -77,7 +77,7 @@ import Layout from '@/components/Layout'
        
 
     </div>
-    </Layout>
+  
 
     </>
 }

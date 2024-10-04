@@ -11,9 +11,9 @@ const ParticipaSlider = () => {
       {items.map((item, index) => (
         <Link legacyBehavior
           key={index} 
-          href={item.title === 'Voluntariado' ? '/voluntario11' : '/donacion12'} // Asigna la ruta correspondiente
+          href={item.title === 'Voluntariado' ? '/voluntario11' : '/donacion12'} 
         >
-          <a className="relative border rounded-md w-[90%] max-w-[223px] mx-auto h-[178px] flex flex-col items-start">
+          <a className="relative border border-[#E8DECF] rounded-[8px] w-[90%] max-w-[200px] mx-auto h-[155px] flex flex-col items-start">
             <img 
               src={item.img} 
               alt={`Icono de ${item.title}`} 
