@@ -2,7 +2,7 @@ const participaList = () => [
     {
       img: '/ayudar.png',
       title: 'Voluntariado',
-      description: 'Únete a nuestra red de voluntariado y contribuye con tu tiempo y habilidades.',
+      description: 'Únete a nuestra red de voluntariado y contribuye con tu tiempo y habilidades dando.',
     },
     {
       img: '/donar.svg',

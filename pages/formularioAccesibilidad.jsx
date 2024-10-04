@@ -1,14 +1,13 @@
 import React from 'react';
 import AccessGoForm from '@/components/Organism/AccesForm';
-import Navbar from '@/components/Navbar';
+
 
 const AccessInfo = () => {
   return (
-    <div>
-      <Navbar/>
-    <div className='flex flex-col items-center md:justify-start mt-3 h-screen bg-white'>
-      <AccessGoForm />
-    </div>
+    <div className='container flex items-center mx-auto px-4 py-8 max-w-4xl'>
+      <div className='w-full flex justify-center items-center'>
+        <AccessGoForm />
+      </div>
     </div>
   );
 }

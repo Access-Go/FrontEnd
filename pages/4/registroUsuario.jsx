@@ -5,11 +5,10 @@ import Link from "next/link";
 
 
  const view4 = () => {
-    return (
-      <div className='max-w-md w-full mx-auto'>
-        <h1 className=' text-center text-2xl p-10 text-[#2F4F4F] font-bold'>
-          Bienvenid@ a AccessGo
-        </h1>
+    return <>
+    
+    <div>
+        <h1 className="text-center text-2xl p-10 font-bold">Bienvenid@ a AccessGo</h1>
 
         <div className='text-center flex justify-center p-10 '>
           <form>
@@ -76,14 +75,16 @@ import Link from "next/link";
             <button
               className='px-6 py-2 border border-transparent rounded-md shadow-sm
               text-white bg-[#2F4F4F] hover:bg-[#004D40] focus:outline-none
-              focus:ring-2 focus:ring-offset-2 focus:ring-[#00695C]'
-            >
-              Inicia Sesion
-            </button>
-          </Link>
-        </div>
-      </div>
-    );
+              focus:ring-2 focus:ring-offset-2 focus:ring-[#00695C]">Inicia Sesion</button>
+            </div>
+
+
+       
+
+    </div>
+    
+
+    </>
 }
 
 export default view4; 
