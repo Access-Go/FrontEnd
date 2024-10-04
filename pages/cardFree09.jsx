@@ -94,11 +94,11 @@ export default function CardFree() {
       </section>
 
       <div className='w-full flex flex-col justify-center items-center mt-8'>
-        <select className='rounded-lg bg-gray-400 mt-4' name='' id=''>
+        <select className='rounded-lg mt-4 bg-[#ECEFF1] w-[290px] h-[37px] text-[#455A64]' name='' id=''>
           <option value='Place'>Juarez 6600 Ciudad de Mexico</option>
         </select>
 
-        <div className='w-[200px] h-[40px] md:w-[220px] md:h-[45px] lg:w-[250px] lg:h-[50px] mt-6 flex justify-center items-center self-center border border-gray-800 rounded-2xl '>
+        <div className='w-[200px] h-[40px] md:w-[220px] md:h-[45px] lg:w-[250px] lg:h-[50px] mt-6 flex justify-center items-center self-center shadow-lg shadow-[0_2.782px_22.975px_0px_rgba(85,98,105,0.20)]  border border-[#231b1b6b] rounded-2xl '>
           <img
             className='mx-4 w-[22px] h-[25px] md:w-[25px] md:h-[28px] lg:w-[28px] lg:h-[30px]'
             src='iconsBlue/motorDisabilityIcon.png'
@@ -133,40 +133,40 @@ export default function CardFree() {
         <div className='w-full border rounded-lg mt-6'>
           <div className='flex flex-row items-center'>
             <img
-              className='w-[37px] h-[45px] md:w-[42px] md:h-[50px] lg:w-[48px] lg:h-[55px] rounded-full p-1'
+              className='w-[39px] h-[45px] md:w-[42px] md:h-[50px] lg:w-[48px] lg:h-[55px] rounded-full p-1'
               src='jhonDoe.png'
               alt=''
             />
-            <p className='text-center md:text-base lg:text-lg'>Jhon Doe</p>
-            <div className='flex flex-rows ml-2 mb-2 '>
+            <p className='text-center md:text-base lg:text-lg ml-2'>Jhon Doe</p>
+            <div className='flex flex-rows ml-8 mb-2 '>
               <img
-                className='w-[15px] h-[20px] md:w-[18px] md:h-[23px] lg:w-[20px] lg:h-[25px]'
+                className='w-[20px] h-[20px] md:w-[24px] md:h-[24px] lg:w-[28px] lg:h-[28px]'
                 src='/estrellita.svg'
                 alt=''
               />
               <img
-                className='w-[15px] h-[20px] md:w-[18px] md:h-[23px] lg:w-[20px] lg:h-[25px]'
+                className='w-[20px] h-[20px] md:w-[24px] md:h-[24px] lg:w-[28px] lg:h-[28px] ml-1'
                 src='/estrellita.svg'
                 alt=''
               />
               <img
-                className='w-[15px] h-[20px] md:w-[18px] md:h-[23px] lg:w-[20px] lg:h-[25px]'
+                className='w-[20px] h-[20px] md:w-[24px] md:h-[24px] lg:w-[28px] lg:h-[28px] ml-1'
                 src='/estrellita.svg'
                 alt=''
               />
               <img
-                className='w-[15px] h-[20px] md:w-[18px] md:h-[23px] lg:w-[20px] lg:h-[25px]'
+                className='w-[20px] h-[20px] md:w-[24px] md:h-[24px] lg:w-[28px] lg:h-[28px] ml-1'
                 src='/estrellita.svg'
                 alt=''
               />
               <img
-                className='w-[15px] h-[20px] md:w-[18px] md:h-[23px] lg:w-[20px] lg:h-[25px]'
+                className='w-[20px] h-[20px] md:w-[24px] md:h-[24px] lg:w-[28px] lg:h-[28px] ml-1'
                 src='/estrellita.svg'
                 alt=''
               />
             </div>
           </div>
-          <p className='p-4 bg-gray-300 rounded-lg md:text-base lg:text-lg'>
+          <p className='p-4 bg-[#F9F9F9] rounded-lg md:text-base lg:text-lg'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
             assumenda consequuntur sint exercitationem ipsam, inventore
             obcaecati voluptas nulla cupiditate alias tempora eligendi sequi
