@@ -79,15 +79,12 @@ export default function Donacion() {
               </ul>
             </div>
 
-            <div className='w-full h-full '>
-              <input
-                className='w-full h-[158px] bg-gray-200 text-center mt-8 rounded-lg text-white text-sm md:text-base lg:text-base'
-                type='text'
-                placeholder='Escribernos algun comentario'
-              />
+            <div>
+              <textarea className='w-[328px] h-[158px] bg-gray-200 text-center mt-8 rounded-lg text-black resize-none overflow-y-auto p-4 pt-6' 
+              placeholder='Escríbenos algún comentario' maxlength="700"></textarea>
+              <p className='text-[#2F4F4F] text-base text-center mt-8 font-bold'>¡Tu apoyo marca la diferencia!</p>
+
             </div>
-          </div>
-        </div>
 
         <div>
           <p className='text-[#2F4F4F] text-base md:text-base lg:text-xl text-center mt-8 font-bold'>
