@@ -2,7 +2,6 @@ import Layout from '@/components/Layout';
 
 export default function Voluntario() {
   return (
-    <Layout>
       <div className='w-full h-full flex-col p-2  '>
         <div className=''>
           <p className='text-[#2F4F4F] text-base text-center font-bold md:text-4xl lg:text-4xl '>
@@ -52,6 +51,5 @@ export default function Voluntario() {
 
         </div>
       </div>
-    </Layout>
   );
 }
