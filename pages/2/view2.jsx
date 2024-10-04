@@ -25,10 +25,16 @@ const view2 = () => {
         <h1 className="text-3xl font-bold text-gray-800 mb-4 text-center sm:text-left">Visita a nuestros socios</h1>
         <p className="text-gray-600 mb-8 text-center sm:text-left">Para ti, que buscas un lugar para pasar un buen rato.</p>
 
-        <div className="flex space-x-4 mb-8 justify-center sm:justify-start">
-          <button className="px-4 py-2 border border-[#EDE6D7] font-semibold text-[#2F4F4F] rounded-full">Con accesibilidad</button>
-          <button className="px-4 py-2 border border-[#EDE6D7] font-semibold text-[#2F4F4F] rounded-full">Más cercanos</button>
-          <button className="px-4 py-2 border border-[#EDE6D7] font-semibold text-[#2F4F4F] rounded-full">Mejor valorados</button>
+        <div className="flex flex-wrap space-y-4 sm:space-y-0 sm:space-x-4 mb-8 justify-center sm:justify-start">
+          <button className="px-4 py-2 border border-[#EDE6D7] font-semibold text-[#2F4F4F] rounded-full">
+            Con accesibilidad
+          </button>
+          <button className="px-4 py-2 border border-[#EDE6D7] font-semibold text-[#2F4F4F] rounded-full">
+            Más cercanos
+          </button>
+          <button className="px-4 py-2 border border-[#EDE6D7] font-semibold text-[#2F4F4F] rounded-full">
+            Mejor valorados
+          </button>
         </div>
 
         <div className="md:hidden mt-2 flex justify-center">
@@ -64,8 +70,11 @@ const view2 = () => {
 
         <div className="flex justify-center space-x-4 my-12">
           <StyledButton variant="verdeCurvo">¿Quieres ser voluntario?</StyledButton>
-          <StyledButton variant="verdeCurvo">¿Quieres hacer un donativo?</StyledButton>
+          <StyledButton className="hidden md:block" variant="verdeCurvo">
+            ¿Quieres hacer un donativo?
+          </StyledButton>
         </div>
+
 
         <h2 className="text-2xl font-bold text-center text-gray-800 mt-16 mb-12">
           ¡Juntos podemos hacer del mundo un lugar<br />más accesible para todos!
