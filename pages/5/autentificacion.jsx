@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link';
 
 
  const view5 = () => {
@@ -27,7 +28,7 @@ import React from "react";
               </div>
             </div>
           </div>
-
+            */link a pagina 20 /*
           <div className='flex justify-center items-center py-5'>
             <button
               className='px-6 py-2 border border-transparent rounded-md shadow-sm
