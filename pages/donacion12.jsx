@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 
 export default function Donacion() {
   return (
-    <div className='w-full h-full flex flex-col justify-center lg:p-16 '>
+    <div className='w-full h-full flex flex-col justify-center mt-8 md:mx-10 lg:p-16 '>
       <div className='text-[#2F4F4F] text-center'>
         <p className='text-xl md:text-4xl lg:text-4xl font-bold '>
           ¡Ayúdanos a Hacer del Mundo un Lugar Más Accesible!
