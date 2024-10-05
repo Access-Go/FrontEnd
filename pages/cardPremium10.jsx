@@ -136,7 +136,7 @@ export default function CardFree() {
               src='raultemporaryImages/offerImg.png'
               alt=''
             />
-            <p className='col-start-3 col-end-4 text-sm ml-4 md:ml-0'>Promocion</p>
+            <p className='md:tex-base lg:text-xl col-start-3 col-end-4 text-sm ml-4 md:ml-0'>Promocion</p>
           </div>
           <p className='md:w-2/3 md:text-left md:pl-2 md:place-self-center text-xs lg:text-base text-center mt-6 h-[67px] bg-[#F9F9F9] mx-1 mb-3 rounded-md pt-2'>
             solo este mes las mejores promociones para ti
@@ -152,7 +152,7 @@ export default function CardFree() {
             />
             <p className='col-start-3 col-end-4 text-sm md:tex-base lg:text-xl ml-4 md:ml-0'>Oferta</p>
           </div>
-          <p className='md:pr-2 md:w-2/3 md:text-left md:pl-2 md:place-self-center lg:w-2/3 lg:text-left lg:pl-2 lg:place-self-center text-xs lg:text-base text-center mt-6 h-[67px] bg-[#F9F9F9] mx-1 mb-3 rounded-md pt-2'>
+          <p className='md:w-2/3 md:text-left md:pl-2 md:place-self-center lg:w-2/3 lg:text-left lg:pl-2 lg:place-self-center text-xs lg:text-base text-center mt-6 h-[67px] bg-[#F9F9F9] mx-1 mb-3 rounded-md pt-2'>
             solo este mes las mejores promociones para ti
           </p>
         </div>
@@ -164,7 +164,7 @@ export default function CardFree() {
               src='raultemporaryImages/menuImg.png'
               alt=''
             />
-            <p className='col-start-3 col-end-4 text-sm ml-4 md:ml-0'>Menu</p>
+            <p className='md:tex-base lg:text-xl col-start-3 col-end-4 text-sm ml-4 md:ml-0'>Menu</p>
           </div>
           <p className='md:w-2/3 md:text-left md:pl-2 md:place-self-center text-xs lg:text-base text-center mt-6 h-[67px] bg-[#F9F9F9] mx-1 mb-3 rounded-md pt-2'>
             solo este mes las mejores promociones para ti
