@@ -1,41 +1,41 @@
 import Layout from '../components/Layout';
 import Link from 'next/link';
 
-
 export default function Notificacion() {
   return (
-    <Layout>
-      <div className='w-full h-full flex flex-col text-[#2F4F4F] mt-2'>
-        <div className='flex flex-col text-center '>
-          <p className='text-base font-bold mt-8'>¡Bienvenido a AccessoGo!</p>
-          <p className='text-sm font-semibold mt-6'>
+    <div className='w-full h-full lg:w-2/3 flex flex-col text-[#2F4F4F] mt-2 md:px-10 lg:px-0'>
+      <div className='flex flex-col text-center '>
+        <p className='text-base md:text-[40px] lg:text-[56px] font-bold mt-8'>¡Bienvenido a AccessoGo!</p>
+
+        <div className='w-full h-full flex flex-col justify-center items-center font-semibold text-sm md:text-base lg:text-xl'>
+          <p className='mt-6'>
             En AccesoGo, invitamos a todas las empresas a unirse a esta causa
             importante y a marcar una diferencia real en la vida de muchas
             personas Regístrate y elige entre dos opciones de perfil:
           </p>
 
-          <p className='text-sm font-semibold mt-6'>Perfil Gratuito:</p>
+          <p className='mt-6'>Perfil Gratuito:</p>
           <ol>
-            <p className='text-sm font-semibold mt-6'>
+            <p className='mt-6'>
               Incluye información básica sobre accesibilidad. Aparece en
               nuestras búsquedas para comenzar a mostrar tu compromiso.
             </p>
           </ol>
 
-          <li className='text-sm font-semibold mt-6'>Perfil Premium:</li>
+          <li className='mt-6'>Perfil Premium:</li>
           <ol>
-            <li className='text-sm font-semibold mt-6'>
+            <li className='mt-6'>
               Todo lo del perfil Gratuito más: Mayor Visibilidad: Herramientas
               avanzadas para destacarte.
             </li>
-            <li className='text-sm font-semibold mt-6'>
+            <li className='mt-6'>
               Estadísticas Detalladas: Oportunidades Destacadas: Aparece en
               nuestra página princilpal y más...
             </li>
           </ol>
         </div>
 
-        <div className='flex flex-col text-center mt-8 text-sm'>
+        <div className='flex flex-col text-center mt-8 text-sm md:text-base lg:text-xl'>
           <p className='mt-6'>
             Tu puedes generar información de tu establecimiento o negocio
             indicando las diferentes formas en las cuales tu negocio es
@@ -64,13 +64,17 @@ export default function Notificacion() {
             cuenta Premium sera dada de baja.
           </p>
         </div>
-        <div className='flex flex-row justify-between items center mt-10'>
-            <button className='w-[155px] h-[40px] border-2 rounded-lg'>Cancelar</button>
-            <Link legacyBehavior href="/formularioAccesibilidad" >
-             <a className='w-[155px] h-[40px] bg-[#2F4F4F] text-white rounded-lg flex items-center justify-center'>Continuar</a></Link>
-                         
-        </div>
       </div>
-    </Layout>
+      <div className='flex flex-row justify-between items center mt-10 md:mt-20'>
+        <button className='w-[155px] h-[40px] md:w-[250px] md:h-[50px] border-2 rounded-lg'>
+          Cancelar
+        </button>
+        <Link legacyBehavior href='/formularioAccesibilidad'>
+          <a className='w-[155px] h-[40px] md:w-[250px] md:h-[50px] bg-[#2F4F4F] text-white rounded-lg flex items-center justify-center'>
+            Continuar
+          </a>
+        </Link>
+      </div>
+    </div>
   );
 }
