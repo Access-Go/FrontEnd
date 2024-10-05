@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 export default function Notificacion() {
   return (
-    <div className='w-full h-full lg:w-2/3 flex flex-col text-[#2F4F4F] mt-2 '>
+    <div className='w-full h-full lg:w-2/3 flex flex-col text-[#2F4F4F] mt-2 md:px-10 lg:px-0'>
       <div className='flex flex-col text-center '>
-        <p className='text-base font-bold mt-8'>¡Bienvenido a AccessoGo!</p>
+        <p className='text-base md:text-[40px] lg:text-[56px] font-bold mt-8'>¡Bienvenido a AccessoGo!</p>
 
         <div className='w-full h-full flex flex-col justify-center items-center font-semibold text-sm md:text-base lg:text-xl'>
           <p className='mt-6'>
@@ -65,12 +65,12 @@ export default function Notificacion() {
           </p>
         </div>
       </div>
-      <div className='flex flex-row justify-between items center mt-10'>
-        <button className='w-[155px] h-[40px] border-2 rounded-lg'>
+      <div className='flex flex-row justify-between items center mt-10 md:mt-20'>
+        <button className='w-[155px] h-[40px] md:w-[250px] md:h-[50px] border-2 rounded-lg'>
           Cancelar
         </button>
         <Link legacyBehavior href='/formularioAccesibilidad'>
-          <a className='w-[155px] h-[40px] bg-[#2F4F4F] text-white rounded-lg flex items-center justify-center'>
+          <a className='w-[155px] h-[40px] md:w-[250px] md:h-[50px] bg-[#2F4F4F] text-white rounded-lg flex items-center justify-center'>
             Continuar
           </a>
         </Link>
