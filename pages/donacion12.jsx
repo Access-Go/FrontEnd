@@ -53,7 +53,7 @@ export default function Donacion() {
           type='text'
           placeholder='    CVV'
         />
-        <button className='w-[111px] h-[30px] bg-[#2F4F4F] rounded-xl mt-6 grid grid-cols-5 text-white items-center'>
+        <button className='w-[111px] h-[30px] bg-[#2F4F4F] rounded-xl mt-6 mb-6 grid grid-cols-5 text-white items-center'>
           <img
             className='col-start-2 col-end-2 w-[20px] h-[20px]'
             src='Union.svg'
