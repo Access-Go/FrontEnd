@@ -1,5 +1,6 @@
 import React from 'react';
 import { Form, Input } from '../Molecules/FormStyles'; 
+import Link from 'next/link';
 
 const LoginForm = () => {
 
@@ -25,7 +26,7 @@ const LoginForm = () => {
         <Input
           type="tel"
           id="whatsapp"
-          placeholder="Introduce tu número de WhatsApp"
+          placeholder="Introduce tu Email o número de WhatsApp"
           className="w-full px-3 py-2 border border-[#B0BEC5] text-xs md:text-sm bg-[#F9F9F9] rounded-md text-[#263238] placeholder-[#78909C] focus:outline-none focus:ring-2 focus:ring-[#B0BEC5] focus:border-transparent focus:bg-blue-50"
         />
       </div>
@@ -57,9 +58,11 @@ const LoginForm = () => {
         </div>
 
         <div className="mt-8 flex justify-center ">
+        <Link legacyBehavior href="7/perfilUsuario">
             <button className="px-6 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-black bg-[#F5F0E5] hover:bg-[#E0D7C6] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00695C]">
               INICIAR SESIÓN
             </button>
+            </Link>
         </div>
     </Form>
   );
