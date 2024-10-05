@@ -65,12 +65,12 @@ export default function Notificacion() {
           </p>
         </div>
       </div>
-      <div className='flex flex-row justify-between items center mt-10 md:mt-20'>
-        <button className='w-[155px] h-[40px] md:w-[250px] md:h-[50px] border-2 rounded-lg'>
+      <div className='flex flex-row justify-between items center mt-10 md:mt-20 md:mb-10'>
+        <button className='w-[155px] h-[40px] md:w-[250px] md:h-[50px] border border-[#263238] rounded-lg'>
           Cancelar
         </button>
         <Link legacyBehavior href='/formularioAccesibilidad'>
-          <a className='w-[155px] h-[40px] md:w-[250px] md:h-[50px] bg-[#2F4F4F] text-white rounded-lg flex items-center justify-center'>
+          <a className='w-[155px] h-[40px] md:w-[250px] md:h-[50px] bg-[#2F4F4F] text-white rounded-lg flex items-center justify-center shadow-md shadow-gray-400'>
             Continuar
           </a>
         </Link>

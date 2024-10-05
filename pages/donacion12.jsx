@@ -62,11 +62,11 @@ export default function Donacion() {
         </button>
       </div>
 
-      <div className='p-2'>
-        <div className='bg-[#2F4F4F] text-center text-white rounded-xl mt-8 p-4'>
-          <p className='text-base font-semibold'>Tu donativo nos permitirá: </p>
+      <div className='p-2 mx-6'>
+        <div className='bg-[#2F4F4F] h-[250px] text-center text-white rounded-xl mx-16 mt-8 p-4'>
+          <p className='text-[28px] font-semibold'>Tu donativo nos permitirá: </p>
           <ul>
-            <li className='text-sm mt-6'>
+            <li className='text-[16px] mt-6 text-center mx-10'>
               Actualizar la base de datos con la información más reciente.
               Mejorar las funcionalidades del sitio para ofrecer una experiencia
               más fluída. Garantizar el mantenimiento y la seguradad de la
@@ -77,7 +77,7 @@ export default function Donacion() {
 
         <div>
           <textarea
-            className='w-[328px] h-[158px] bg-gray-200 text-center mt-8 rounded-lg text-black resize-none overflow-y-auto p-4 pt-6'
+            className='w-full h-[158px] bg-gray-200  text-center mt-8 rounded-lg text-black resize-none overflow-y-auto p-4 pt-6'
             placeholder='Escríbenos algún comentario'
             maxlength='700'
           ></textarea>
