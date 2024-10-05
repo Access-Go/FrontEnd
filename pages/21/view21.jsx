@@ -63,8 +63,8 @@ const View21 = () => {
         </div>
 
         <div className="mt-12">
-          <h3 className="text-xl font-semibold mb-4 text-[#2F4F4]">Cambia tus imagenes</h3>
-          <div className="flex items-center justify-center space-x-8 overflow-x-auto pb-4">
+          <h3 className="text-xl text-center font-semibold mb-4 text-[#2F4F4]">Cambia tus imagenes</h3>
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-center space-x-auto overflow-x-auto pb-4">
             <button className="bg-[#577070] text-white p-2 rounded-[20px] w-[58px] h-[52px] hover:bg-green-800 transition-colors">
               <Image
                 src="/Mas.png"
