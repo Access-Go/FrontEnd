@@ -1,5 +1,5 @@
 import EstablecimientoSlider from '@/components/Molecules/establesamientoSlider'
-import { StyledButton } from '@/components/atoms/Index'
+import { Link, StyledButton } from '@/components/atoms/Index'
 import Image from 'next/image'
 
 
@@ -69,10 +69,14 @@ const view2 = () => {
         </div>
 
         <div className="flex justify-center space-x-4 my-12">
-          <StyledButton variant="verdeCurvo">¿Quieres ser voluntario?</StyledButton>
-          <StyledButton className="hidden md:block" variant="verdeCurvo">
-            ¿Quieres hacer un donativo?
-          </StyledButton>
+          <Link legacyBehavior href="/voluntario11" >
+            <StyledButton variant="verdeCurvo">¿Quieres ser voluntario?</StyledButton>
+          </Link>
+          <Link legacyBehavior href="/donacion12" >
+            <StyledButton className="hidden md:block" variant="verdeCurvo">
+              ¿Quieres hacer un donativo?
+            </StyledButton>
+          </Link>
         </div>
 
 

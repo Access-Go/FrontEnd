@@ -1,4 +1,4 @@
-import { StyledButton, } from '@/components/atoms/Index';
+import { Link, StyledButton, } from '@/components/atoms/Index';
 import { InputWithLabel } from '@/components/atoms/Input';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -35,6 +35,7 @@ const View23 = () => {
             <button className="px-4 py-2 border bg-[#F9F9F9] rounded-md text-sm font-medium text-[#546E7A] hover:bg-[#ECEFF1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#B0BEC5] md:hidden">
               Actualizar foto de perfil
             </button>
+            <br />
             <InputWithLabel placeholder='Nombre' />
           </div>
 
@@ -134,7 +135,9 @@ const View23 = () => {
         </div>
         <div className="mt-8 flex justify-center md:justify-end space-x-4">
           <StyledButton variant="blancoCuadrado">CANCELAR</StyledButton>
-          <StyledButton variant="verdeCuadrado">CONTINUAR</StyledButton>
+          <Link legacyBehavior href="/cardFree09" >
+            <StyledButton variant="verdeCuadrado">CONTINUAR</StyledButton>
+          </Link>
         </div>
       </div>
     </>
